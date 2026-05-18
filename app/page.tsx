@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import dadosAlbum from './figurinhas.json';
+import dadosAlbum from '../src/figurinhas.json';
 
 // Definição dos tipos com base no seu JSON
 interface Figunha {
@@ -93,7 +93,7 @@ export default function Home() {
       if (!bateComBusca) return false;
 
       // Filtro de Seção
-      if (filtroSecao !== 'todas' && f.secao !== filterSecao) return false;
+      if (filtroSecao !== 'todas' && f.secao !== filtroSecao) return false;
 
       // Filtro de Status
       if (filtroStatus === 'preenchidas' && qtd === 0) return false;
