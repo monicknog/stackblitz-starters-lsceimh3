@@ -11,7 +11,7 @@ interface EstadoFigurinhas {
 }
 
 // remove `imagem` field (URL) from items before exposing them to the client
-const listaFigurinhas = (dadosAlbum.lista_figurinhas as Figurinha[]).map(({ imagem, ...rest }) => rest) as Figurinha[];
+const listaFigurinhas = (dadosAlbum.lista_figurinhas as any).map(({ imagem, ...rest }: any) => rest) as Figurinha[];
 
 export default function Home() {
   const [album, setAlbum] = useState<EstadoFigurinhas>({});
