@@ -15,8 +15,9 @@ export interface Figurinha {
 interface FigurinhaCardProps {
   fig: Figurinha;
   qtd: number;
-  onAdicionar: () => void;
-  onRemover: () => void;
+  onAdicionar?: () => void;
+  onRemover?: () => void;
+  readOnly?: boolean;
 }
 
 export function FigurinhaCard({
@@ -24,6 +25,7 @@ export function FigurinhaCard({
   qtd,
   onAdicionar,
   onRemover,
+  readOnly = false,
 }: FigurinhaCardProps) {
   let bordaCor = 'border-gray-700';
   let bgCard = 'bg-gray-800';
@@ -68,20 +70,26 @@ export function FigurinhaCard({
         </h3>
         <p className="text-xs text-gray-400 truncate mt-0.5">{subtitulo}</p>
 
-        <div className="mt-auto pt-3 flex items-center justify-between">
-          <button
-            type="button"
-            onClick={onRemover}
-            disabled={qtd === 0}
-            className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-lg transition-colors ${
-              qtd > 0
-                ? 'bg-gray-700 hover:bg-gray-600 text-white'
-                : 'bg-gray-800 text-gray-600 cursor-not-allowed'
-            }`}
-            aria-label={`Remover ${fig.id}`}
-          >
-            −
-          </button>
+        <div
+          className={`mt-auto pt-3 flex items-center ${
+            readOnly ? 'justify-center' : 'justify-between'
+          }`}
+        >
+          {!readOnly && (
+            <button
+              type="button"
+              onClick={onRemover}
+              disabled={qtd === 0}
+              className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-lg transition-colors ${
+                qtd > 0
+                  ? 'bg-gray-700 hover:bg-gray-600 text-white'
+                  : 'bg-gray-800 text-gray-600 cursor-not-allowed'
+              }`}
+              aria-label={`Remover ${fig.id}`}
+            >
+              −
+            </button>
+          )}
 
           <span
             className={`font-mono font-bold text-lg ${
@@ -95,14 +103,16 @@ export function FigurinhaCard({
             {qtd}
           </span>
 
-          <button
-            type="button"
-            onClick={onAdicionar}
-            className="w-8 h-8 bg-red-600 hover:bg-red-500 text-white rounded-lg flex items-center justify-center font-bold text-lg transition-colors"
-            aria-label={`Adicionar ${fig.id}`}
-          >
-            +
-          </button>
+          {!readOnly && (
+            <button
+              type="button"
+              onClick={onAdicionar}
+              className="w-8 h-8 bg-red-600 hover:bg-red-500 text-white rounded-lg flex items-center justify-center font-bold text-lg transition-colors"
+              aria-label={`Adicionar ${fig.id}`}
+            >
+              +
+            </button>
+          )}
         </div>
       </div>
     </article>

@@ -1,17 +1,14 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
-import dadosAlbum from '../src/figurinhas-com-jogadores.json';
-import { FigurinhaCard, type Figurinha } from './components/FigurinhaCard';
-
-interface EstadoFigurinhas {
-  [id: string]: {
-    obtidas: number;
-  };
-}
-
-// remove `imagem` field (URL) from items before exposing them to the client
-const listaFigurinhas = (dadosAlbum.lista_figurinhas as any).map(({ imagem, ...rest }: any) => rest) as Figurinha[];
+import { type FormEvent, useEffect, useMemo, useState } from 'react';
+import { FigurinhaCard } from './components/FigurinhaCard';
+import {
+  SENHA_PRINCIPAL,
+  type EstadoFigurinhas,
+  listaFigurinhas,
+  obterAlbumTitulo,
+  serializarAlbumParaLink,
+} from './lib/album';
 
 export default function Home() {
   const [album, setAlbum] = useState<EstadoFigurinhas>({});
@@ -20,11 +17,20 @@ export default function Home() {
   >('todas');
   const [filtroSecao, setFiltroSecao] = useState<string>('todas');
   const [busca, setBusca] = useState<string>('');
+  const [autenticado, setAutenticado] = useState(false);
+  const [senhaDigitada, setSenhaDigitada] = useState('');
+  const [mensagemSenha, setMensagemSenha] = useState('');
+  const [mensagemLink, setMensagemLink] = useState('');
 
   useEffect(() => {
     const dadosSalvos = localStorage.getItem('album_copa_2026');
     if (dadosSalvos) {
       setAlbum(JSON.parse(dadosSalvos));
+    }
+
+    const desbloqueado = localStorage.getItem('album_copa_2026_autenticado');
+    if (desbloqueado === 'true') {
+      setAutenticado(true);
     }
   }, []);
 
@@ -89,17 +95,124 @@ export default function Home() {
     });
   }, [album, filtroStatus, filtroSecao, busca]);
 
+  const confirmarSenha = (evento: FormEvent<HTMLFormElement>) => {
+    evento.preventDefault();
+
+    if (senhaDigitada === SENHA_PRINCIPAL) {
+      setAutenticado(true);
+      setMensagemSenha('');
+      localStorage.setItem('album_copa_2026_autenticado', 'true');
+      return;
+    }
+
+    setMensagemSenha('Senha incorreta.');
+  };
+
+  const copiarLinkPublico = async () => {
+    try {
+      const estado = serializarAlbumParaLink(album);
+      const url = `${window.location.origin}/compartilhar?album=${encodeURIComponent(estado)}`;
+
+      await navigator.clipboard.writeText(url);
+      setMensagemLink('Link público copiado.');
+      window.setTimeout(() => setMensagemLink(''), 2500);
+    } catch {
+      setMensagemLink('Não foi possível copiar o link.');
+    }
+  };
+
+  const copiarLinkTroca = async () => {
+    try {
+      const estado = serializarAlbumParaLink(album);
+      const url = `${window.location.origin}/trocas?album=${encodeURIComponent(estado)}`;
+
+      await navigator.clipboard.writeText(url);
+      setMensagemLink('Link de troca copiado.');
+      window.setTimeout(() => setMensagemLink(''), 2500);
+    } catch {
+      setMensagemLink('Não foi possível copiar o link de troca.');
+    }
+  };
+
+  if (!autenticado) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center p-6">
+        <form
+          onSubmit={confirmarSenha}
+          className="w-full max-w-md bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-xl"
+        >
+          <h1 className="text-2xl font-bold text-white mb-2">
+            {obterAlbumTitulo()}
+          </h1>
+          <p className="text-gray-400 mb-6">
+            Informe a senha para acessar e editar seu álbum.
+          </p>
+
+          <label className="block text-xs font-bold text-gray-400 uppercase mb-2">
+            Senha
+          </label>
+          <input
+            type="password"
+            value={senhaDigitada}
+            onChange={(e) => setSenhaDigitada(e.target.value)}
+            className="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-red-500"
+            placeholder="Digite a senha"
+            autoFocus
+          />
+
+          {mensagemSenha && (
+            <p className="text-red-400 text-sm mt-3">{mensagemSenha}</p>
+          )}
+
+          <button
+            type="submit"
+            className="mt-5 w-full bg-red-600 hover:bg-red-500 text-white font-semibold py-2.5 rounded-lg transition-colors"
+          >
+            Entrar
+          </button>
+        </form>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 p-6">
       <div className="max-w-7xl mx-auto">
-        <header className="mb-8 border-b border-gray-800 pb-6 text-center lg:text-left lg:flex lg:justify-between lg:items-center">
+        <header className="mb-8 border-b border-gray-800 pb-6 text-center lg:text-left lg:flex lg:justify-between lg:items-center gap-4">
           <div>
             <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">
-              {dadosAlbum.album}
+              {obterAlbumTitulo()}
             </h1>
             <p className="text-gray-400 mt-1">
-              Gerenciador Pessoal de Figurinhas
+              Gerenciador pessoal de figurinhas
             </p>
+            <div className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+              <button
+                type="button"
+                onClick={copiarLinkPublico}
+                className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors"
+              >
+                Copiar link público
+              </button>
+              <button
+                type="button"
+                onClick={copiarLinkTroca}
+                className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-colors"
+              >
+                Copiar link de troca
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  localStorage.removeItem('album_copa_2026_autenticado');
+                  setAutenticado(false);
+                }}
+                className="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold transition-colors"
+              >
+                Bloquear novamente
+              </button>
+            </div>
+            {mensagemLink && <p className="text-green-400 text-sm mt-2">{mensagemLink}</p>}
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 lg:mt-0">
