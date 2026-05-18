@@ -4,6 +4,7 @@ import {
   listaFigurinhas,
   obterAlbumTitulo,
 } from '../lib/album';
+import { carregarAlbumDoBanco } from '../lib/album-db';
 
 interface PageProps {
   searchParams?: {
@@ -11,8 +12,12 @@ interface PageProps {
   };
 }
 
-export default function SharePage({ searchParams }: PageProps) {
-  const album = desserializarAlbumDoLink(searchParams?.album);
+export default async function SharePage({ searchParams }: PageProps) {
+  const albumDoLink = desserializarAlbumDoLink(searchParams?.album);
+  const album =
+    searchParams?.album && Object.keys(albumDoLink).length > 0
+      ? albumDoLink
+      : await carregarAlbumDoBanco();
 
   const estatisticas = listaFigurinhas.reduce(
     (acumulado, figurinha) => {

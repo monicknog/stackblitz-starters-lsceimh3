@@ -7,11 +7,11 @@ import {
   type EstadoFigurinhas,
   listaFigurinhas,
   obterAlbumTitulo,
-  serializarAlbumParaLink,
 } from './lib/album';
 
 export default function Home() {
   const [album, setAlbum] = useState<EstadoFigurinhas>({});
+  const [carregandoAlbum, setCarregandoAlbum] = useState(true);
   const [filtroStatus, setFiltroStatus] = useState<
     'todas' | 'preenchidas' | 'faltantes' | 'repetidas'
   >('todas');
@@ -21,12 +21,36 @@ export default function Home() {
   const [senhaDigitada, setSenhaDigitada] = useState('');
   const [mensagemSenha, setMensagemSenha] = useState('');
   const [mensagemLink, setMensagemLink] = useState('');
+  const [mensagemBanco, setMensagemBanco] = useState('');
 
   useEffect(() => {
-    const dadosSalvos = localStorage.getItem('album_copa_2026');
-    if (dadosSalvos) {
-      setAlbum(JSON.parse(dadosSalvos));
-    }
+    let ativo = true;
+
+    const carregarAlbum = async () => {
+      try {
+        const response = await fetch('/api/album', { cache: 'no-store' });
+
+        if (!response.ok) {
+          throw new Error('Falha ao carregar o álbum.');
+        }
+
+        const dados = (await response.json()) as { album?: EstadoFigurinhas };
+
+        if (ativo && dados.album) {
+          setAlbum(dados.album);
+        }
+      } catch {
+        if (ativo) {
+          setMensagemBanco('Não foi possível carregar o álbum salvo no banco.');
+        }
+      } finally {
+        if (ativo) {
+          setCarregandoAlbum(false);
+        }
+      }
+    };
+
+    void carregarAlbum();
 
     const desbloqueado = localStorage.getItem('album_copa_2026_autenticado');
     if (desbloqueado === 'true') {
@@ -34,20 +58,50 @@ export default function Home() {
     }
   }, []);
 
-  const salvarAlbum = (novoEstado: EstadoFigurinhas) => {
-    setAlbum(novoEstado);
-    localStorage.setItem('album_copa_2026', JSON.stringify(novoEstado));
+  const salvarAlbum = (
+    atualizar: (estadoAtual: EstadoFigurinhas) => EstadoFigurinhas,
+  ) => {
+    setAlbum((estadoAtual) => {
+      const novoEstado = atualizar(estadoAtual);
+
+      void (async () => {
+        try {
+          const response = await fetch('/api/album', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ album: novoEstado }),
+          });
+
+          if (!response.ok) {
+            throw new Error('Falha ao salvar o álbum.');
+          }
+
+          setMensagemBanco('');
+        } catch {
+          setMensagemBanco('Não foi possível salvar suas figurinhas no banco.');
+        }
+      })();
+
+      return novoEstado;
+    });
   };
 
   const adicionarFigurinha = (id: string) => {
-    const atual = album[id]?.obtidas || 0;
-    salvarAlbum({ ...album, [id]: { obtidas: atual + 1 } });
+    salvarAlbum((estadoAtual) => {
+      const atual = estadoAtual[id]?.obtidas || 0;
+      return { ...estadoAtual, [id]: { obtidas: atual + 1 } };
+    });
   };
 
   const removerFigurinha = (id: string) => {
-    const atual = album[id]?.obtidas || 0;
-    if (atual === 0) return;
-    salvarAlbum({ ...album, [id]: { obtidas: atual - 1 } });
+    salvarAlbum((estadoAtual) => {
+      const atual = estadoAtual[id]?.obtidas || 0;
+      if (atual === 0) return estadoAtual;
+
+      return { ...estadoAtual, [id]: { obtidas: atual - 1 } };
+    });
   };
 
   const secoesDisponiveis = useMemo(() => {
@@ -110,8 +164,7 @@ export default function Home() {
 
   const copiarLinkPublico = async () => {
     try {
-      const estado = serializarAlbumParaLink(album);
-      const url = `${window.location.origin}/compartilhar?album=${encodeURIComponent(estado)}`;
+      const url = `${window.location.origin}/compartilhar`;
 
       await navigator.clipboard.writeText(url);
       setMensagemLink('Link público copiado.');
@@ -123,8 +176,7 @@ export default function Home() {
 
   const copiarLinkTroca = async () => {
     try {
-      const estado = serializarAlbumParaLink(album);
-      const url = `${window.location.origin}/trocas?album=${encodeURIComponent(estado)}`;
+      const url = `${window.location.origin}/trocas`;
 
       await navigator.clipboard.writeText(url);
       setMensagemLink('Link de troca copiado.');
@@ -213,6 +265,7 @@ export default function Home() {
               </button>
             </div>
             {mensagemLink && <p className="text-green-400 text-sm mt-2">{mensagemLink}</p>}
+            {mensagemBanco && <p className="text-yellow-400 text-sm mt-2">{mensagemBanco}</p>}
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 lg:mt-0">
@@ -255,6 +308,12 @@ export default function Home() {
             </div>
           </div>
         </header>
+
+        {carregandoAlbum ? (
+          <section className="bg-gray-800 p-4 rounded-2xl border border-gray-700 mb-6 text-center text-gray-400">
+            Carregando álbum salvo no banco...
+          </section>
+        ) : null}
 
         <section className="bg-gray-800 p-4 rounded-2xl border border-gray-700 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>

@@ -5,6 +5,7 @@ import {
   listaFigurinhas,
   obterAlbumTitulo,
 } from '../lib/album';
+import { carregarAlbumDoBanco } from '../lib/album-db';
 import { TrocasFilter } from './TrocasFilter';
 
 interface PageProps {
@@ -13,8 +14,12 @@ interface PageProps {
   };
 }
 
-export default function TrocasPage({ searchParams }: PageProps) {
-  const album = desserializarAlbumDoLink(searchParams?.album);
+export default async function TrocasPage({ searchParams }: PageProps) {
+  const albumDoLink = desserializarAlbumDoLink(searchParams?.album);
+  const album =
+    searchParams?.album && Object.keys(albumDoLink).length > 0
+      ? albumDoLink
+      : await carregarAlbumDoBanco();
   const disponiveis = listarDisponiveisParaTroca(album);
 
   const totalDisponiveis = disponiveis.reduce(
