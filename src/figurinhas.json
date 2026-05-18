@@ -1,0 +1,8274 @@
+{
+  "album": "Figurinhas Copa 2026",
+  "total_figurinhas": 1042,
+  "lista_figurinhas": [
+    {
+      "id": "FWC_00",
+      "secao": "Página Inicial",
+      "numero": "00",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_1",
+      "secao": "Página Inicial",
+      "numero": "1",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_2",
+      "secao": "Página Inicial",
+      "numero": "2",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_3",
+      "secao": "Página Inicial",
+      "numero": "3",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_4",
+      "secao": "Página Inicial",
+      "numero": "4",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_5",
+      "secao": "Página Inicial",
+      "numero": "5",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_6",
+      "secao": "Página Inicial",
+      "numero": "6",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_7",
+      "secao": "Página Inicial",
+      "numero": "7",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_8",
+      "secao": "Página Inicial",
+      "numero": "8",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_9",
+      "secao": "FIFA World Cup History",
+      "numero": "9",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_10",
+      "secao": "FIFA World Cup History",
+      "numero": "10",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_11",
+      "secao": "FIFA World Cup History",
+      "numero": "11",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_12",
+      "secao": "FIFA World Cup History",
+      "numero": "12",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_13",
+      "secao": "FIFA World Cup History",
+      "numero": "13",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_14",
+      "secao": "FIFA World Cup History",
+      "numero": "14",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_15",
+      "secao": "FIFA World Cup History",
+      "numero": "15",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_16",
+      "secao": "FIFA World Cup History",
+      "numero": "16",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_17",
+      "secao": "FIFA World Cup History",
+      "numero": "17",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_18",
+      "secao": "FIFA World Cup History",
+      "numero": "18",
+      "tipo": "Especial"
+    },
+    {
+      "id": "FWC_19",
+      "secao": "FIFA World Cup History",
+      "numero": "19",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC1",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC1",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC2",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC2",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC3",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC3",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC4",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC4",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC5",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC5",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC6",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC6",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC7",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC7",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC8",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC8",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC9",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC9",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC10",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC10",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC11",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC11",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC12",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC12",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC13",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC13",
+      "tipo": "Especial"
+    },
+    {
+      "id": "CC14",
+      "secao": "Figurinhas da Coca-Cola",
+      "numero": "CC14",
+      "tipo": "Especial"
+    },
+    {
+      "id": "MEX_ESCUDO",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "MEX_1",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_2",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_3",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_4",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_5",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_6",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_7",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_8",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_9",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_10",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_11",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_12",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_13",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_14",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_15",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_16",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_17",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_18",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_19",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MEX_20",
+      "secao": "Grupo A",
+      "pais": "México",
+      "sigla": "MEX",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_ESCUDO",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "RSA_1",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_2",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_3",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_4",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_5",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_6",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_7",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_8",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_9",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_10",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_11",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_12",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_13",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_14",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_15",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_16",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_17",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_18",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_19",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "RSA_20",
+      "secao": "Grupo A",
+      "pais": "África do Sul",
+      "sigla": "RSA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_ESCUDO",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "KOR_1",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_2",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_3",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_4",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_5",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_6",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_7",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_8",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_9",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_10",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_11",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_12",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_13",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_14",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_15",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_16",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_17",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_18",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_19",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KOR_20",
+      "secao": "Grupo A",
+      "pais": "Coreia do Sul",
+      "sigla": "KOR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_ESCUDO",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CZE_1",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_2",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_3",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_4",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_5",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_6",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_7",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_8",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_9",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_10",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_11",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_12",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_13",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_14",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_15",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_16",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_17",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_18",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_19",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CZE_20",
+      "secao": "Grupo A",
+      "pais": "Rep. Tcheca",
+      "sigla": "CZE",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_ESCUDO",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CAN_1",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_2",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_3",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_4",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_5",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_6",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_7",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_8",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_9",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_10",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_11",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_12",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_13",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_14",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_15",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_16",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_17",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_18",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_19",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CAN_20",
+      "secao": "Grupo B",
+      "pais": "Canadá",
+      "sigla": "CAN",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_ESCUDO",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "BIH_1",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_2",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_3",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_4",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_5",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_6",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_7",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_8",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_9",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_10",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_11",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_12",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_13",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_14",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_15",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_16",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_17",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_18",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_19",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BIH_20",
+      "secao": "Grupo B",
+      "pais": "Bósnia",
+      "sigla": "BIH",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_ESCUDO",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "QAT_1",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_2",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_3",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_4",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_5",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_6",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_7",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_8",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_9",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_10",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_11",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_12",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_13",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_14",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_15",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_16",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_17",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_18",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_19",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "QAT_20",
+      "secao": "Grupo B",
+      "pais": "Catar",
+      "sigla": "QAT",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_ESCUDO",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "SUI_1",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_2",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_3",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_4",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_5",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_6",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_7",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_8",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_9",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_10",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_11",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_12",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_13",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_14",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_15",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_16",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_17",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_18",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_19",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SUI_20",
+      "secao": "Grupo B",
+      "pais": "Suíça",
+      "sigla": "SUI",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_ESCUDO",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "BRA_1",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_2",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_3",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_4",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_5",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_6",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_7",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_8",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_9",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_10",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_11",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_12",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_13",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_14",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_15",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_16",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_17",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_18",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_19",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BRA_20",
+      "secao": "Grupo C",
+      "pais": "Brasil",
+      "sigla": "BRA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_ESCUDO",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "MAR_1",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_2",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_3",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_4",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_5",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_6",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_7",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_8",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_9",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_10",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_11",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_12",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_13",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_14",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_15",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_16",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_17",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_18",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_19",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "MAR_20",
+      "secao": "Grupo C",
+      "pais": "Marrocos",
+      "sigla": "MAR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_ESCUDO",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "HAI_1",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_2",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_3",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_4",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_5",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_6",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_7",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_8",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_9",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_10",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_11",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_12",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_13",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_14",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_15",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_16",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_17",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_18",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_19",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "HAI_20",
+      "secao": "Grupo C",
+      "pais": "Haiti",
+      "sigla": "HAI",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_ESCUDO",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "SCO_1",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_2",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_3",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_4",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_5",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_6",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_7",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_8",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_9",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_10",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_11",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_12",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_13",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_14",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_15",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_16",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_17",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_18",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_19",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SCO_20",
+      "secao": "Grupo C",
+      "pais": "Escócia",
+      "sigla": "SCO",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_ESCUDO",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "USA_1",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_2",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_3",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_4",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_5",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_6",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_7",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_8",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_9",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_10",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_11",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_12",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_13",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_14",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_15",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_16",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_17",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_18",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_19",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "USA_20",
+      "secao": "Grupo D",
+      "pais": "Estados Unidos",
+      "sigla": "USA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_ESCUDO",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "PAR_1",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_2",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_3",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_4",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_5",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_6",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_7",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_8",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_9",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_10",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_11",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_12",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_13",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_14",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_15",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_16",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_17",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_18",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_19",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAR_20",
+      "secao": "Grupo D",
+      "pais": "Paraguai",
+      "sigla": "PAR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_ESCUDO",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "AUS_1",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_2",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_3",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_4",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_5",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_6",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_7",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_8",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_9",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_10",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_11",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_12",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_13",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_14",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_15",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_16",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_17",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_18",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_19",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUS_20",
+      "secao": "Grupo D",
+      "pais": "Austrália",
+      "sigla": "AUS",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_ESCUDO",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "TUR_1",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_2",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_3",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_4",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_5",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_6",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_7",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_8",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_9",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_10",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_11",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_12",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_13",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_14",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_15",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_16",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_17",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_18",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_19",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUR_20",
+      "secao": "Grupo D",
+      "pais": "Turquia",
+      "sigla": "TUR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_ESCUDO",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "GER_1",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_2",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_3",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_4",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_5",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_6",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_7",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_8",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_9",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_10",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_11",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_12",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_13",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_14",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_15",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_16",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_17",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_18",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_19",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GER_20",
+      "secao": "Grupo E",
+      "pais": "Alemanha",
+      "sigla": "GER",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_ESCUDO",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CUW_1",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_2",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_3",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_4",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_5",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_6",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_7",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_8",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_9",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_10",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_11",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_12",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_13",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_14",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_15",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_16",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_17",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_18",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_19",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CUW_20",
+      "secao": "Grupo E",
+      "pais": "Curaçao",
+      "sigla": "CUW",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_ESCUDO",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CIV_1",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_2",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_3",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_4",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_5",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_6",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_7",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_8",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_9",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_10",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_11",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_12",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_13",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_14",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_15",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_16",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_17",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_18",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_19",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CIV_20",
+      "secao": "Grupo E",
+      "pais": "Costa do Marfim",
+      "sigla": "CIV",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_ESCUDO",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "ECU_1",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_2",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_3",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_4",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_5",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_6",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_7",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_8",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_9",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_10",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_11",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_12",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_13",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_14",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_15",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_16",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_17",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_18",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_19",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ECU_20",
+      "secao": "Grupo E",
+      "pais": "Equador",
+      "sigla": "ECU",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_ESCUDO",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "NED_1",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_2",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_3",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_4",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_5",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_6",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_7",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_8",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_9",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_10",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_11",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_12",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_13",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_14",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_15",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_16",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_17",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_18",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_19",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NED_20",
+      "secao": "Grupo F",
+      "pais": "Holanda",
+      "sigla": "NED",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_ESCUDO",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "JPN_1",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_2",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_3",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_4",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_5",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_6",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_7",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_8",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_9",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_10",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_11",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_12",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_13",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_14",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_15",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_16",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_17",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_18",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_19",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JPN_20",
+      "secao": "Grupo F",
+      "pais": "Japão",
+      "sigla": "JPN",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_ESCUDO",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "SWE_1",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_2",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_3",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_4",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_5",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_6",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_7",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_8",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_9",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_10",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_11",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_12",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_13",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_14",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_15",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_16",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_17",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_18",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_19",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SWE_20",
+      "secao": "Grupo F",
+      "pais": "Suécia",
+      "sigla": "SWE",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_ESCUDO",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "TUN_1",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_2",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_3",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_4",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_5",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_6",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_7",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_8",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_9",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_10",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_11",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_12",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_13",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_14",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_15",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_16",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_17",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_18",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_19",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "TUN_20",
+      "secao": "Grupo F",
+      "pais": "Tunísia",
+      "sigla": "TUN",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_ESCUDO",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "BEL_1",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_2",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_3",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_4",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_5",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_6",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_7",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_8",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_9",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_10",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_11",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_12",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_13",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_14",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_15",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_16",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_17",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_18",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_19",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "BEL_20",
+      "secao": "Grupo G",
+      "pais": "Bélgica",
+      "sigla": "BEL",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_ESCUDO",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "EGY_1",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_2",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_3",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_4",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_5",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_6",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_7",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_8",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_9",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_10",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_11",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_12",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_13",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_14",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_15",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_16",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_17",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_18",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_19",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "EGY_20",
+      "secao": "Grupo G",
+      "pais": "Egito",
+      "sigla": "EGY",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_ESCUDO",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "IRN_1",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_2",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_3",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_4",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_5",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_6",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_7",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_8",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_9",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_10",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_11",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_12",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_13",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_14",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_15",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_16",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_17",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_18",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_19",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRN_20",
+      "secao": "Grupo G",
+      "pais": "Irã",
+      "sigla": "IRN",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_ESCUDO",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "NZL_1",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_2",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_3",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_4",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_5",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_6",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_7",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_8",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_9",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_10",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_11",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_12",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_13",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_14",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_15",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_16",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_17",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_18",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_19",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NZL_20",
+      "secao": "Grupo G",
+      "pais": "Nova Zelândia",
+      "sigla": "NZL",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_ESCUDO",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "ESP_1",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_2",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_3",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_4",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_5",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_6",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_7",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_8",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_9",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_10",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_11",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_12",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_13",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_14",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_15",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_16",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_17",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_18",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_19",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ESP_20",
+      "secao": "Grupo H",
+      "pais": "Espanha",
+      "sigla": "ESP",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_ESCUDO",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CPV_1",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_2",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_3",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_4",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_5",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_6",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_7",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_8",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_9",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_10",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_11",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_12",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_13",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_14",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_15",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_16",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_17",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_18",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_19",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CPV_20",
+      "secao": "Grupo H",
+      "pais": "Cabo Verde",
+      "sigla": "CPV",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_ESCUDO",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "KSA_1",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_2",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_3",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_4",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_5",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_6",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_7",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_8",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_9",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_10",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_11",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_12",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_13",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_14",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_15",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_16",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_17",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_18",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_19",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "KSA_20",
+      "secao": "Grupo H",
+      "pais": "Arábia Saudita",
+      "sigla": "KSA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_ESCUDO",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "URU_1",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_2",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_3",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_4",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_5",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_6",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_7",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_8",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_9",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_10",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_11",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_12",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_13",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_14",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_15",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_16",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_17",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_18",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_19",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "URU_20",
+      "secao": "Grupo H",
+      "pais": "Uruguai",
+      "sigla": "URU",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_ESCUDO",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "FRA_1",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_2",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_3",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_4",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_5",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_6",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_7",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_8",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_9",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_10",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_11",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_12",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_13",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_14",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_15",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_16",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_17",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_18",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_19",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "FRA_20",
+      "secao": "Grupo I",
+      "pais": "França",
+      "sigla": "FRA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_ESCUDO",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "SEN_1",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_2",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_3",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_4",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_5",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_6",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_7",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_8",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_9",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_10",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_11",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_12",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_13",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_14",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_15",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_16",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_17",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_18",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_19",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "SEN_20",
+      "secao": "Grupo I",
+      "pais": "Senegal",
+      "sigla": "SEN",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_ESCUDO",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "IRQ_1",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_2",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_3",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_4",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_5",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_6",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_7",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_8",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_9",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_10",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_11",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_12",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_13",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_14",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_15",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_16",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_17",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_18",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_19",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "IRQ_20",
+      "secao": "Grupo I",
+      "pais": "Iraque",
+      "sigla": "IRQ",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_ESCUDO",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "NOR_1",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_2",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_3",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_4",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_5",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_6",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_7",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_8",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_9",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_10",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_11",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_12",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_13",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_14",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_15",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_16",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_17",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_18",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_19",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "NOR_20",
+      "secao": "Grupo I",
+      "pais": "Noruega",
+      "sigla": "NOR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_ESCUDO",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "ARG_1",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_2",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_3",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_4",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_5",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_6",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_7",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_8",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_9",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_10",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_11",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_12",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_13",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_14",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_15",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_16",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_17",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_18",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_19",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ARG_20",
+      "secao": "Grupo J",
+      "pais": "Argentina",
+      "sigla": "ARG",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_ESCUDO",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "ALG_1",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_2",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_3",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_4",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_5",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_6",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_7",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_8",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_9",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_10",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_11",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_12",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_13",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_14",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_15",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_16",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_17",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_18",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_19",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ALG_20",
+      "secao": "Grupo J",
+      "pais": "Algéria",
+      "sigla": "ALG",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_ESCUDO",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "AUT_1",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_2",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_3",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_4",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_5",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_6",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_7",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_8",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_9",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_10",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_11",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_12",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_13",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_14",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_15",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_16",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_17",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_18",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_19",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "AUT_20",
+      "secao": "Grupo J",
+      "pais": "Áustria",
+      "sigla": "AUT",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_ESCUDO",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "JOR_1",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_2",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_3",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_4",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_5",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_6",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_7",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_8",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_9",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_10",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_11",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_12",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_13",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_14",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_15",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_16",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_17",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_18",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_19",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "JOR_20",
+      "secao": "Grupo J",
+      "pais": "Jordânia",
+      "sigla": "JOR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_ESCUDO",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "POR_1",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_2",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_3",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_4",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_5",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_6",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_7",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_8",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_9",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_10",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_11",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_12",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_13",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_14",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_15",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_16",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_17",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_18",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_19",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "POR_20",
+      "secao": "Grupo K",
+      "pais": "Portugal",
+      "sigla": "POR",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_ESCUDO",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "COD_1",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_2",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_3",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_4",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_5",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_6",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_7",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_8",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_9",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_10",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_11",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_12",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_13",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_14",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_15",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_16",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_17",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_18",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_19",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COD_20",
+      "secao": "Grupo K",
+      "pais": "Congo",
+      "sigla": "COD",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_ESCUDO",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "UZB_1",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_2",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_3",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_4",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_5",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_6",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_7",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_8",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_9",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_10",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_11",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_12",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_13",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_14",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_15",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_16",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_17",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_18",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_19",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "UZB_20",
+      "secao": "Grupo K",
+      "pais": "Uzbequistão",
+      "sigla": "UZB",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_ESCUDO",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "COL_1",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_2",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_3",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_4",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_5",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_6",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_7",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_8",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_9",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_10",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_11",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_12",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_13",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_14",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_15",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_16",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_17",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_18",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_19",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "COL_20",
+      "secao": "Grupo K",
+      "pais": "Colômbia",
+      "sigla": "COL",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_ESCUDO",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "ENG_1",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_2",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_3",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_4",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_5",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_6",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_7",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_8",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_9",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_10",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_11",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_12",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_13",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_14",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_15",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_16",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_17",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_18",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_19",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "ENG_20",
+      "secao": "Grupo L",
+      "pais": "Inglaterra",
+      "sigla": "ENG",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_ESCUDO",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "CRO_1",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_2",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_3",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_4",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_5",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_6",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_7",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_8",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_9",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_10",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_11",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_12",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_13",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_14",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_15",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_16",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_17",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_18",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_19",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "CRO_20",
+      "secao": "Grupo L",
+      "pais": "Croácia",
+      "sigla": "CRO",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_ESCUDO",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "GHA_1",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_2",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_3",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_4",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_5",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_6",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_7",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_8",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_9",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_10",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_11",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_12",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_13",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_14",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_15",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_16",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_17",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_18",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_19",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "GHA_20",
+      "secao": "Grupo L",
+      "pais": "Gana",
+      "sigla": "GHA",
+      "numero": "20",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_ESCUDO",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "Escudo",
+      "tipo": "Brilhante/Escudo"
+    },
+    {
+      "id": "PAN_1",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "1",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_2",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "2",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_3",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "3",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_4",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "4",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_5",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "5",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_6",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "6",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_7",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "7",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_8",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "8",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_9",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "9",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_10",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "10",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_11",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "11",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_12",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "12",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_13",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "13",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_14",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "14",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_15",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "15",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_16",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "16",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_17",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "17",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_18",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "18",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_19",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "19",
+      "tipo": "Jogador"
+    },
+    {
+      "id": "PAN_20",
+      "secao": "Grupo L",
+      "pais": "Panamá",
+      "sigla": "PAN",
+      "numero": "20",
+      "tipo": "Jogador"
+    }
+  ]
+}
