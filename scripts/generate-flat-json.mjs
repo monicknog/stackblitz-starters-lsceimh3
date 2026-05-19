@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
+const specialInputPath = path.join(process.cwd(), 'src', 'figurinhas.json');
 const inputPath = path.join(process.cwd(), 'src', 'figurinhas-com-jogadores.json');
 const outPath = path.join(process.cwd(), 'src', 'figurinhas-album.json');
 
@@ -9,11 +10,37 @@ if (!fs.existsSync(inputPath)) {
   process.exit(1);
 }
 
+const specialRaw = fs.readFileSync(specialInputPath, 'utf8');
+const specialData = JSON.parse(specialRaw);
+
 const raw = fs.readFileSync(inputPath, 'utf8');
 const data = JSON.parse(raw);
 
+const specialFigurinhas = (specialData.lista_figurinhas || [])
+  .filter((f) => {
+    const id = String(f.id || '');
+    return id.startsWith('FWC_') || id.startsWith('CC');
+  })
+  .map((f) => ({
+    id: f.id,
+    secao: f.secao ?? null,
+    pais: f.pais ?? null,
+    sigla: f.sigla ?? null,
+    numero: f.numero ?? null,
+    tipo: f.tipo ?? null,
+    jogador: f.jogador ?? null,
+    tipojogador: f.tipojogador ?? f.tipoJogador ?? null,
+    ordem_album: f.ordem_album ?? f.ordemAlbum ?? null,
+    imagem:
+      f.id === 'FWC_00' || String(f.id || '').startsWith('FWC_')
+        ? 'https://logospng.org/download/panini/logo-panini-1024.png'
+        : String(f.id || '').startsWith('CC')
+        ? 'https://logos-world.net/wp-content/uploads/2020/03/Coca-Cola-Emblem.png'
+        : f.imagem ?? null,
+  }));
+
 const times = data.times || {};
-const results = [];
+const results = [...specialFigurinhas];
 
 function isEscudo(f) {
   return (f.numero && String(f.numero).toLowerCase() === 'escudo') || (f.id && String(f.id).toUpperCase().endsWith('_ESCUDO')) || (f.tipo && f.tipo.toLowerCase().includes('escudo'));
@@ -114,6 +141,7 @@ for (const [sigla, info] of Object.entries(times)) {
       jogador: f.jogador ?? null,
       tipojogador: f.tipojogador ?? f.tipoJogador ?? null,
       ordem_album: f.ordem_album ?? null
+      ,imagem: f.imagem ?? null
     });
   }
 }
