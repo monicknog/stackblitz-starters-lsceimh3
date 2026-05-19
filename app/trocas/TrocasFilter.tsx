@@ -52,7 +52,7 @@ export function TrocasFilter({
 
       return true;
     });
-  }, [disponiveis, busca, filtroSecao]);
+  }, [disponiveis, busca, filtroSecao, filtroTime]);
 
   const totalFiltrado = figurinhasFiltradas.reduce(
     (acumulado, figurinha) => acumulado + figurinha.disponiveisParaTroca,
