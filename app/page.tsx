@@ -8,6 +8,7 @@ import {
   listaFigurinhas,
   obterAlbumTitulo,
 } from './lib/album';
+import { RecentAdditions } from './components/RecentAdditions';
 
 export default function Home() {
   const [album, setAlbum] = useState<EstadoFigurinhas>({});
@@ -35,7 +36,7 @@ export default function Home() {
           throw new Error('Falha ao carregar o álbum.');
         }
 
-        const dados = (await response.json()) as { album?: EstadoFigurinhas };
+        const dados = (await response.json()) as { album?: EstadoFigurinhas; updatedAt?: string };
 
         if (ativo && dados.album) {
           setAlbum(dados.album);
@@ -373,6 +374,7 @@ export default function Home() {
               </span>
             </div>
           </div>
+          <RecentAdditions />
         </header>
 
         {carregandoAlbum ? (
