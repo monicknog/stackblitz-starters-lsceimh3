@@ -13,6 +13,7 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
   const [busca, setBusca] = useState<string>('');
   const [filtroSecao, setFiltroSecao] = useState<string>('todas');
   const [filtroTime, setFiltroTime] = useState<string>('todas');
+  const [filtroStatus, setFiltroStatus] = useState<'todas' | 'tenho' | 'faltando'>('todas');
 
   const itens = lista.map((l) => ({ ...l }));
 
@@ -33,7 +34,9 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
     const termo = busca.toLowerCase().trim();
     return itens.filter((fig) => {
       const qtd = album[fig.id]?.obtidas || 0;
-      if (qtd <= 0) return false;
+
+      if (filtroStatus === 'tenho' && qtd <= 0) return false;
+      if (filtroStatus === 'faltando' && qtd > 0) return false;
 
       if (termo) {
         const bate =
@@ -50,11 +53,11 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
 
       return true;
     });
-  }, [itens, album, busca, filtroSecao, filtroTime]);
+  }, [itens, album, busca, filtroSecao, filtroTime, filtroStatus]);
 
   return (
     <>
-      <section className="mb-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+      <section className="mb-4 grid grid-cols-1 md:grid-cols-4 gap-3">
         <input
           type="text"
           placeholder="Buscar: nome, código, país"
@@ -86,11 +89,21 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
             </option>
           ))}
         </select>
+
+        <select
+          className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-white"
+          value={filtroStatus}
+          onChange={(e) => setFiltroStatus(e.target.value as 'todas' | 'tenho' | 'faltando')}
+        >
+          <option value="todas">Todas</option>
+          <option value="tenho">Tenho</option>
+          <option value="faltando">Faltando</option>
+        </select>
       </section>
 
       {filtradas.length === 0 ? (
         <div className="text-center py-12 bg-gray-800 rounded-2xl border border-dashed border-gray-700 text-gray-400">
-          Nenhuma figurinha visível com esses filtros.
+          Nenhuma figurinha corresponde aos filtros aplicados.
         </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">

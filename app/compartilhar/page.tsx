@@ -84,7 +84,7 @@ export default async function SharePage({ searchParams }: PageProps) {
               Figurinhas visíveis no link
             </h2>
             <p className="text-sm text-gray-500 mt-1">
-              Quem recebeu o link consegue ver somente estas figurinhas e suas quantidades.
+              Quem recebeu o link consegue filtrar entre figurinhas que você tem e as que estão faltando.
             </p>
           </div>
 
