@@ -51,7 +51,7 @@ export default async function SharePage({ searchParams }: PageProps) {
             <p className="text-xs text-gray-500 mt-2 max-w-2xl mx-auto">
               Nota: os números mostrados (Total / Tenho / Faltam) refletem o álbum
               salvo no banco de dados. Para atualizar estes valores publique/registre
-              suas alterações na página principal e use "Copiar link público".
+              suas alterações na página principal e use &quot;Copiar link público&quot;.
             </p>
           </div>
 

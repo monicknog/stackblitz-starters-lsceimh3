@@ -79,6 +79,18 @@ async function garantirSchemaTurso() {
 
   await cliente.execute({
     sql: `
+      CREATE TABLE IF NOT EXISTS album_changes (
+        id TEXT PRIMARY KEY,
+        figurinha_id TEXT NOT NULL,
+        delta INTEGER NOT NULL,
+        source TEXT,
+        created_at TEXT NOT NULL
+      )
+    `,
+  });
+
+  await cliente.execute({
+    sql: `
       CREATE TABLE IF NOT EXISTS ${INTERESSE_TABLE} (
         id TEXT PRIMARY KEY,
         nome TEXT NOT NULL,
@@ -102,6 +114,13 @@ function garantirSchemaLocal(database: any) {
       id TEXT PRIMARY KEY,
       album_json TEXT NOT NULL,
       updated_at TEXT NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS album_changes (
+      id TEXT PRIMARY KEY,
+      figurinha_id TEXT NOT NULL,
+      delta INTEGER NOT NULL,
+      source TEXT,
+      created_at TEXT NOT NULL
     );
     CREATE TABLE IF NOT EXISTS ${INTERESSE_TABLE} (
       id TEXT PRIMARY KEY,
@@ -659,8 +678,19 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
   if (cliente) {
     await garantirSchemaTurso();
 
-    const updatedAt = new Date().toISOString();
+    const now = new Date().toISOString();
 
+    // read existing album to compute diffs
+    const resultado = await cliente.execute({
+      sql: 'SELECT album_json FROM album_state WHERE id = ? LIMIT 1',
+      args: [ALBUM_ID],
+    });
+
+    const linha = resultado.rows[0] as unknown as AlbumRow | undefined;
+    const antigoJson = String(linha?.album_json ?? '').trim();
+    const antigo = antigoJson ? (JSON.parse(antigoJson) as EstadoFigurinhas) : ({} as EstadoFigurinhas);
+
+    // persist new album
     await cliente.execute({
       sql: `
         INSERT INTO album_state (id, album_json, updated_at)
@@ -669,16 +699,44 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
           album_json = excluded.album_json,
           updated_at = excluded.updated_at
       `,
-      args: [ALBUM_ID, JSON.stringify(album), updatedAt],
+      args: [ALBUM_ID, JSON.stringify(album), now],
     });
 
-    return updatedAt;
+    // record changes (figurinhas whose count increased)
+    const changes = [] as Array<{ id: string; delta: number }>;
+    for (const key of Object.keys(album)) {
+      const novo = Number((album as any)[key]?.obtidas || album[key] || 0) || 0;
+      const velho = Number((antigo as any)[key]?.obtidas || antigo[key] || 0) || 0;
+      if (novo > velho) {
+        changes.push({ id: key, delta: novo - velho });
+      }
+    }
+
+    for (const c of changes) {
+      await cliente.execute({
+        sql: `
+          INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+          VALUES (?, ?, ?, ?, ?)
+        `,
+        args: [randomUUID(), c.id, c.delta, 'manual', now],
+      });
+    }
+
+    return now;
   }
 
   const database = abrirBanco();
 
   try {
-    const updatedAt = new Date().toISOString();
+    const now = new Date().toISOString();
+
+    // read existing album to compute diffs
+    const linha = database
+      .prepare('SELECT album_json FROM album_state WHERE id = ? LIMIT 1')
+      .get(ALBUM_ID) as { album_json?: string } | undefined;
+
+    const antigoJson = String(linha?.album_json ?? '').trim();
+    const antigo = antigoJson ? (JSON.parse(antigoJson) as EstadoFigurinhas) : ({} as EstadoFigurinhas);
 
     database
       .prepare(`
@@ -688,9 +746,27 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
           album_json = excluded.album_json,
           updated_at = excluded.updated_at
       `)
-      .run(ALBUM_ID, JSON.stringify(album), updatedAt);
+      .run(ALBUM_ID, JSON.stringify(album), now);
 
-    return updatedAt;
+    const changes: Array<{ id: string; delta: number }> = [];
+    for (const key of Object.keys(album)) {
+      const novo = Number((album as any)[key]?.obtidas || album[key] || 0) || 0;
+      const velho = Number((antigo as any)[key]?.obtidas || antigo[key] || 0) || 0;
+      if (novo > velho) {
+        changes.push({ id: key, delta: novo - velho });
+      }
+    }
+
+    const insert = database.prepare(`
+      INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+      VALUES (?, ?, ?, ?, ?)
+    `);
+
+    for (const c of changes) {
+      insert.run(randomUUID(), c.id, c.delta, 'manual', now);
+    }
+
+    return now;
   } finally {
     database.close();
   }
@@ -708,4 +784,58 @@ async function contarOfertasPendentesTurso(transacao: any, figurinhaOfertadaId: 
 
   const linha = resultado.rows[0] as Record<string, unknown> | undefined;
   return Number(linha?.total ?? 0);
+}
+
+export async function listarHistoricoAlteracoes(limit = 20) {
+  const cliente = criarClienteTurso();
+
+  if (cliente) {
+    await garantirSchemaTurso();
+
+    const resultado = await cliente.execute({
+      sql: `
+        SELECT id, figurinha_id, delta, source, created_at
+        FROM album_changes
+        ORDER BY created_at DESC
+        LIMIT ?
+      `,
+      args: [limit],
+    } as any);
+
+    return resultado.rows.map((r) => {
+      const row = r as Record<string, unknown>;
+      return {
+        id: String(row.id ?? ''),
+        figurinhaId: String(row.figurinha_id ?? ''),
+        delta: Number(row.delta ?? 0),
+        source: String(row.source ?? ''),
+        createdAt: String(row.created_at ?? ''),
+      };
+    });
+  }
+
+  const database = abrirBanco();
+
+  try {
+    garantirSchemaLocal(database);
+
+    const rows = database
+      .prepare(`
+        SELECT id, figurinha_id, delta, source, created_at
+        FROM album_changes
+        ORDER BY created_at DESC
+        LIMIT ?
+      `)
+      .all(limit) as Array<Record<string, unknown>>;
+
+    return rows.map((row) => ({
+      id: String(row.id ?? ''),
+      figurinhaId: String(row.figurinha_id ?? ''),
+      delta: Number(row.delta ?? 0),
+      source: String(row.source ?? ''),
+      createdAt: String(row.created_at ?? ''),
+    }));
+  } finally {
+    database.close();
+  }
 }
