@@ -12,6 +12,7 @@ export interface Figurinha {
   sigla?: string;
   jogador?: string | null;
   tipoJogador?: string;
+  imagem?: string | null;
 
 }
 
@@ -43,6 +44,7 @@ export function FigurinhaCard({
 
   const titulo = fig.jogador || (fig.numero === 'Escudo' ? 'Escudo' : `Nº ${fig.numero}`);
   const subtitulo = fig.pais || fig.secao;
+  const isLogoEspecial = Boolean(fig.imagem && (fig.id.startsWith('FWC_') || fig.id.startsWith('CC')));
 
   const mappedFlag = fig.sigla ? iso3map[fig.sigla as keyof typeof iso3map] : undefined;
   const resolveFlagSrc = (value?: string) => {
@@ -58,11 +60,29 @@ export function FigurinhaCard({
       : null,
   );
 
+  const [specialLogoSrc, setSpecialLogoSrc] = useState<string | null>(fig.imagem ?? null);
+  const figuraImagem = fig.imagem ?? null;
+  const slotImagem = isLogoEspecial ? specialLogoSrc : flagSrc;
+
   return (
     <article
       className={`rounded-xl border ${bordaCor} ${bgCard} flex flex-col overflow-hidden shadow-lg transition-transform hover:-translate-y-0.5`}
     >
-      <div className="relative aspect-[/4] bg-gray-900/80 border-b border-gray-700/60">
+      <div
+        className={`relative border-b border-gray-700/60 ${
+          isLogoEspecial ? 'h-0 overflow-hidden border-none bg-transparent' : 'aspect-[/4] bg-gray-900/80'
+        }`}
+      >
+        {!isLogoEspecial && figuraImagem ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={figuraImagem}
+            alt={fig.jogador ?? fig.id}
+            className={`absolute inset-0 h-full w-full object-contain ${
+              isLogoEspecial ? 'p-1' : 'p-2'
+            }`}
+          />
+        ) : null}
         {(fig.tipo === 'Especial' || fig.tipo.includes('Brilhante')) && (
           <span className="absolute top-1.5 right-1.5 text-[9px] bg-amber-500/90 text-gray-900 px-1.5 py-0.5 rounded font-bold uppercase">
             ★
@@ -73,12 +93,17 @@ export function FigurinhaCard({
       <div className="p-3 flex flex-col flex-1">
         <div className="flex justify-between items-start gap-1 mb-1">
           <div className="flex items-center gap-2">
-            {flagSrc ? (
+            {slotImagem ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={flagSrc}
-                alt={fig.pais ?? fig.sigla}
+                src={slotImagem}
+                alt={fig.pais ?? fig.sigla ?? fig.id}
                 onError={() => {
+                  if (isLogoEspecial) {
+                    setSpecialLogoSrc(null);
+                    return;
+                  }
+
                   if (mappedFlag && !mappedFlag.startsWith('data:') && fig.sigla) {
                     setFlagSrc(`https://countryflagsapi.com/png/${encodeURIComponent(fig.sigla)}`);
                     return;
