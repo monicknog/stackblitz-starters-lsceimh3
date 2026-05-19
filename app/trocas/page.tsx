@@ -1,11 +1,15 @@
 import { FigurinhaCard } from '../components/FigurinhaCard';
 import {
+  aplicarReservasEmDisponiveis,
+  contarReservasPendentesPorFigurinha,
   desserializarAlbumDoLink,
   listarDisponiveisParaTroca,
+  listarFigurinhasFaltando,
   listaFigurinhas,
   obterAlbumTitulo,
 } from '../lib/album';
-import { carregarAlbumDoBanco } from '../lib/album-db';
+import { carregarAlbumDoBanco, listarInteressesDeTroca } from '../lib/album-db';
+import { InteresseTrocaForm } from './InteresseTrocaForm';
 import { TrocasFilter } from './TrocasFilter';
 
 interface PageProps {
@@ -20,7 +24,11 @@ export default async function TrocasPage({ searchParams }: PageProps) {
     searchParams?.album && Object.keys(albumDoLink).length > 0
       ? albumDoLink
       : await carregarAlbumDoBanco();
-  const disponiveis = listarDisponiveisParaTroca(album);
+  const interesses = await listarInteressesDeTroca();
+  const reservasPendentesPorId = contarReservasPendentesPorFigurinha(interesses);
+  const disponiveisBase = listarDisponiveisParaTroca(album);
+  const disponiveis = aplicarReservasEmDisponiveis(disponiveisBase, reservasPendentesPorId);
+  const faltando = listarFigurinhasFaltando(album);
 
   const totalDisponiveis = disponiveis.reduce(
     (acumulado, figurinha) => acumulado + figurinha.disponiveisParaTroca,
@@ -35,7 +43,8 @@ export default async function TrocasPage({ searchParams }: PageProps) {
             {obterAlbumTitulo()}
           </h1>
           <p className="text-gray-400 mt-2 max-w-2xl mx-auto">
-            Estas são as figurinhas disponíveis para troca neste álbum.
+            Estas são as figurinhas disponíveis para troca neste álbum. Quem quiser,
+            pode registrar interesse escolhendo uma figurinha que está faltando para você.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 max-w-2xl mx-auto">
@@ -65,6 +74,8 @@ export default async function TrocasPage({ searchParams }: PageProps) {
             </div>
           </div>
         </header>
+
+        <InteresseTrocaForm disponiveis={disponiveis} faltando={faltando} />
 
         <TrocasFilter
           disponiveis={disponiveis}

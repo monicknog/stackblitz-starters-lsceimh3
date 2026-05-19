@@ -1,5 +1,6 @@
 import { FigurinhaCard } from '../components/FigurinhaCard';
 import { ShareFilter } from './ShareFilter';
+import { ShareLiveStats } from './ShareLiveStats';
 import {
   desserializarAlbumDoLink,
   listaFigurinhas,
@@ -14,15 +15,14 @@ interface PageProps {
 }
 
 export default async function SharePage({ searchParams }: PageProps) {
-  const albumDoLink = desserializarAlbumDoLink(searchParams?.album);
-  const album =
-    searchParams?.album && Object.keys(albumDoLink).length > 0
-      ? albumDoLink
-      : await carregarAlbumDoBanco();
+  // Always read the persisted album from the database so public view
+  // matches the protected main page's persisted state.
+  const album = await carregarAlbumDoBanco();
 
   const estatisticas = listaFigurinhas.reduce(
     (acumulado, figurinha) => {
-      const qtd = album[figurinha.id]?.obtidas || 0;
+      const raw = album[figurinha.id]?.obtidas ?? album[figurinha.id] ?? 0;
+      const qtd = Number(raw) || 0;
 
       if (qtd > 0) acumulado.preenchidas += 1;
       if (qtd > 1) acumulado.repetidas += qtd - 1;
@@ -48,34 +48,14 @@ export default async function SharePage({ searchParams }: PageProps) {
               Visualização pública do álbum. Esta página mostra apenas o que foi marcado,
               sem permitir edição.
             </p>
+            <p className="text-xs text-gray-500 mt-2 max-w-2xl mx-auto">
+              Nota: os números mostrados (Total / Tenho / Faltam) refletem o álbum
+              salvo no banco de dados. Para atualizar estes valores publique/registre
+              suas alterações na página principal e use "Copiar link público".
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 max-w-2xl mx-auto">
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Total
-              </span>
-              <span className="text-xl font-bold text-blue-400">
-                {estatisticas.total}
-              </span>
-            </div>
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Tenho
-              </span>
-              <span className="text-xl font-bold text-green-400">
-                {estatisticas.preenchidas}
-              </span>
-            </div>
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Faltam
-              </span>
-              <span className="text-xl font-bold text-red-400">
-                {estatisticas.total - estatisticas.preenchidas}
-              </span>
-            </div>
-          </div>
+          <ShareLiveStats />
         </header>
 
         <main>

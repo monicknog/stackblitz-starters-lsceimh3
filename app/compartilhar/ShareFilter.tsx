@@ -33,7 +33,8 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
   const filtradas = useMemo(() => {
     const termo = busca.toLowerCase().trim();
     return itens.filter((fig) => {
-      const qtd = album[fig.id]?.obtidas || 0;
+      const raw = album[fig.id]?.obtidas ?? album[fig.id] ?? 0;
+      const qtd = Number(raw) || 0;
 
       if (filtroStatus === 'tenho' && qtd <= 0) return false;
       if (filtroStatus === 'faltando' && qtd > 0) return false;
@@ -108,7 +109,7 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
           {filtradas.map((fig) => (
-            <FigurinhaCard key={fig.id} fig={fig} qtd={album[fig.id]?.obtidas || 0} readOnly />
+            <FigurinhaCard key={fig.id} fig={fig} qtd={Number(album[fig.id]?.obtidas ?? album[fig.id] ?? 0) || 0} readOnly />
           ))}
         </div>
       )}

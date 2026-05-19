@@ -12,6 +12,20 @@ export interface FigurinhaComTroca extends Figurinha {
   disponiveisParaTroca: number;
 }
 
+export interface InteresseTroca {
+  id: string;
+  nome: string;
+  figurinhaDesejadaId: string;
+  figurinhaDesejadaNome: string;
+  figurinhaOfertadaId: string;
+  figurinhaOfertadaNome: string;
+  status: 'pendente' | 'rejeitado' | 'aceito';
+  createdAt: string;
+  updatedAt?: string;
+  rejectedAt?: string | null;
+  acceptedAt?: string | null;
+}
+
 export const SENHA_PRINCIPAL = 'copanogs26';
 
 export const listaFigurinhas = (dadosAlbum as any[])
@@ -40,6 +54,34 @@ export function listarDisponiveisParaTroca(album: EstadoFigurinhas) {
       } satisfies FigurinhaComTroca;
     })
     .filter((figurinha) => figurinha.disponiveisParaTroca > 0) as FigurinhaComTroca[];
+}
+
+export function aplicarReservasEmDisponiveis(
+  disponiveis: FigurinhaComTroca[],
+  reservasPendentesPorId: Record<string, number>,
+) {
+  return disponiveis
+    .map((figurinha) => {
+      const reservado = reservasPendentesPorId[figurinha.id] || 0;
+      return {
+        ...figurinha,
+        disponiveisParaTroca: Math.max(0, figurinha.disponiveisParaTroca - reservado),
+      } satisfies FigurinhaComTroca;
+    })
+    .filter((figurinha) => figurinha.disponiveisParaTroca > 0) as FigurinhaComTroca[];
+}
+
+export function listarFigurinhasFaltando(album: EstadoFigurinhas) {
+  return listaFigurinhas.filter((figurinha) => (album[figurinha.id]?.obtidas || 0) === 0);
+}
+
+export function contarReservasPendentesPorFigurinha(interesses: InteresseTroca[]) {
+  return interesses.reduce<Record<string, number>>((acumulado, interesse) => {
+    if (interesse.status !== 'pendente') return acumulado;
+
+    acumulado[interesse.figurinhaDesejadaId] = (acumulado[interesse.figurinhaDesejadaId] || 0) + 1;
+    return acumulado;
+  }, {});
 }
 
 export function desserializarAlbumDoLink(valor: string | string[] | undefined) {
