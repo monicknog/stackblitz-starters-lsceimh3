@@ -1,4 +1,4 @@
-import dadosAlbum from '../../src/figurinhas-com-jogadores.json';
+import dadosAlbum from '../../src/figurinhas-album.json';
 import type { Figurinha } from '../components/FigurinhaCard';
 
 export interface EstadoFigurinhas {
@@ -14,9 +14,11 @@ export interface FigurinhaComTroca extends Figurinha {
 
 export const SENHA_PRINCIPAL = 'copanogs26';
 
-export const listaFigurinhas = (dadosAlbum.lista_figurinhas as any).map(
-  ({ imagem, ...rest }: any) => rest,
-) as Figurinha[];
+export const listaFigurinhas = (dadosAlbum as any[])
+  .map(({ ordem_album, tipojogador, tipoJogador, ...rest }: any) => ({
+    ...rest,
+    tipoJogador: tipoJogador ?? tipojogador ?? undefined,
+  })) as Figurinha[];
 
 export function serializarAlbumParaLink(album: EstadoFigurinhas) {
   return Object.entries(album)
@@ -59,5 +61,5 @@ export function desserializarAlbumDoLink(valor: string | string[] | undefined) {
 }
 
 export function obterAlbumTitulo() {
-  return dadosAlbum.album as string;
+  return 'Álbum Copa';
 }
