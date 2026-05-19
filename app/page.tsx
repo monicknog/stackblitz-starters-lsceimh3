@@ -22,6 +22,7 @@ export default function Home() {
   const [mensagemSenha, setMensagemSenha] = useState('');
   const [mensagemLink, setMensagemLink] = useState('');
   const [mensagemBanco, setMensagemBanco] = useState('');
+  const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
 
   useEffect(() => {
     let ativo = true;
@@ -38,6 +39,7 @@ export default function Home() {
 
         if (ativo && dados.album) {
           setAlbum(dados.album);
+          setLastSavedAt(dados.updatedAt ?? null);
         }
       } catch {
         if (ativo) {
@@ -51,6 +53,28 @@ export default function Home() {
     };
 
     void carregarAlbum();
+
+    const intervalo = setInterval(async () => {
+      try {
+        const res = await fetch('/api/album', { cache: 'no-store' });
+        if (!res.ok) return;
+        const dados = await res.json();
+        const serverUpdatedAt = dados.updatedAt ?? null;
+
+        if (serverUpdatedAt && serverUpdatedAt !== lastSavedAt) {
+          // Server has a newer persisted album; update local view
+          setAlbum(dados.album || {});
+          setLastSavedAt(serverUpdatedAt);
+        }
+      } catch {
+        // ignore polling errors
+      }
+    }, 8000);
+
+    return () => {
+      ativo = false;
+      clearInterval(intervalo);
+    };
 
     const desbloqueado = localStorage.getItem('album_copa_2026_autenticado');
     if (desbloqueado === 'true') {
@@ -78,7 +102,9 @@ export default function Home() {
             throw new Error('Falha ao salvar o álbum.');
           }
 
+          const dados = await response.json();
           setMensagemBanco('');
+          setLastSavedAt(dados.updatedAt ?? null);
         } catch {
           setMensagemBanco('Não foi possível salvar suas figurinhas no banco.');
         }
@@ -164,6 +190,13 @@ export default function Home() {
 
   const copiarLinkPublico = async () => {
     try {
+      // Ensure the current album is persisted before sharing
+      await fetch('/api/album', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ album }),
+      });
+
       const url = `${window.location.origin}/compartilhar`;
 
       await navigator.clipboard.writeText(url);
@@ -176,6 +209,13 @@ export default function Home() {
 
   const copiarLinkTroca = async () => {
     try {
+      // Persist before sharing
+      await fetch('/api/album', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ album }),
+      });
+
       const url = `${window.location.origin}/trocas`;
 
       await navigator.clipboard.writeText(url);
@@ -183,6 +223,25 @@ export default function Home() {
       window.setTimeout(() => setMensagemLink(''), 2500);
     } catch {
       setMensagemLink('Não foi possível copiar o link de troca.');
+    }
+  };
+
+  const copiarLinkInteressados = async () => {
+    try {
+      // Persist before sharing
+      await fetch('/api/album', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ album }),
+      });
+
+      const url = `${window.location.origin}/interessados`;
+
+      await navigator.clipboard.writeText(url);
+      setMensagemLink('Link de interessados copiado.');
+      window.setTimeout(() => setMensagemLink(''), 2500);
+    } catch {
+      setMensagemLink('Não foi possível copiar o link de interessados.');
     }
   };
 
@@ -252,6 +311,13 @@ export default function Home() {
                 className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-colors"
               >
                 Copiar link de troca
+              </button>
+              <button
+                type="button"
+                onClick={copiarLinkInteressados}
+                className="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition-colors"
+              >
+                Copiar link interessados
               </button>
               <button
                 type="button"
