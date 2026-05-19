@@ -1,4 +1,7 @@
-'use client';
+"use client";
+
+import { useState } from 'react';
+import iso3map from '../../src/iso3-to-iso2.json';
 
 export interface Figurinha {
   id: string;
@@ -41,6 +44,20 @@ export function FigurinhaCard({
   const titulo = fig.jogador || (fig.numero === 'Escudo' ? 'Escudo' : `Nº ${fig.numero}`);
   const subtitulo = fig.pais || fig.secao;
 
+  const mappedFlag = fig.sigla ? iso3map[fig.sigla as keyof typeof iso3map] : undefined;
+  const resolveFlagSrc = (value?: string) => {
+    if (!value) return null;
+    if (value.startsWith('data:')) return value;
+    return `https://flagcdn.com/w20/${value.toLowerCase()}.png`;
+  };
+  const [flagSrc, setFlagSrc] = useState<string | null>(
+    mappedFlag
+      ? resolveFlagSrc(mappedFlag)
+      : fig.pais
+      ? `https://countryflagsapi.com/png/${encodeURIComponent(fig.pais)}`
+      : null,
+  );
+
   return (
     <article
       className={`rounded-xl border ${bordaCor} ${bgCard} flex flex-col overflow-hidden shadow-lg transition-transform hover:-translate-y-0.5`}
@@ -55,9 +72,32 @@ export function FigurinhaCard({
 
       <div className="p-3 flex flex-col flex-1">
         <div className="flex justify-between items-start gap-1 mb-1">
-          <span className="text-[10px] font-mono font-bold text-gray-500">
-            {fig.id}
-          </span>
+          <div className="flex items-center gap-2">
+            {flagSrc ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={flagSrc}
+                alt={fig.pais ?? fig.sigla}
+                onError={() => {
+                  if (mappedFlag && !mappedFlag.startsWith('data:') && fig.sigla) {
+                    setFlagSrc(`https://countryflagsapi.com/png/${encodeURIComponent(fig.sigla)}`);
+                    return;
+                  }
+
+                  setFlagSrc(null);
+                }}
+                className="w-6 h-4 rounded-sm object-cover shadow-sm"
+              />
+            ) : (
+              <div className="w-6 h-4 flex items-center justify-center bg-gray-800 text-[9px] rounded-sm text-gray-300 font-bold">
+                {fig.sigla ?? fig.pais?.slice(0, 2) ?? ''}
+              </div>
+            )}
+
+            <span className="text-[10px] font-mono font-bold text-gray-500">
+              {fig.id}
+            </span>
+          </div>
           {fig.tipoJogador === 'foto_oficial' && (
             <span className="text-[9px] bg-blue-500/20 text-blue-300 px-1 py-0.5 rounded shrink-0">
               Foto

@@ -1,0 +1,7 @@
+Flag report generated at 2026-05-19T02:06:07.896Z
+Total items: 1008
+Items without ISO2 mapping: 0
+
+Mappings that point to the same ISO2 (possible ambiguity):
+
+Items without mapping (sample up to 200):
