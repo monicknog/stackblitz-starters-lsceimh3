@@ -1,4 +1,5 @@
 import { FigurinhaCard } from '../components/FigurinhaCard';
+import { ShareFilter } from './ShareFilter';
 import {
   desserializarAlbumDoLink,
   listaFigurinhas,
@@ -87,16 +88,7 @@ export default async function SharePage({ searchParams }: PageProps) {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
-            {listaFigurinhas.map((fig) => (
-              <FigurinhaCard
-                key={fig.id}
-                fig={fig}
-                qtd={album[fig.id]?.obtidas || 0}
-                readOnly
-              />
-            ))}
-          </div>
+          <ShareFilter lista={listaFigurinhas} album={album} />
         </main>
       </div>
     </div>

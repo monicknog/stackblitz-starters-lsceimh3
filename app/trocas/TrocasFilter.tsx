@@ -17,10 +17,19 @@ export function TrocasFilter({
 }: TrocasFilterProps) {
   const [busca, setBusca] = useState<string>('');
   const [filtroSecao, setFiltroSecao] = useState<string>('todas');
+  const [filtroTime, setFiltroTime] = useState<string>('todas');
 
   const secoesDisponiveis = useMemo(() => {
     const secoes = new Set(disponiveis.map((f) => f.secao));
     return ['todas', ...Array.from(secoes).sort()];
+  }, [disponiveis]);
+
+  const timesDisponiveis = useMemo(() => {
+    const times = new Map<string, string>();
+    disponiveis.forEach((f) => {
+      if (f.sigla) times.set(f.sigla, f.pais ?? f.sigla);
+    });
+    return ['todas', ...Array.from(times.keys()).sort()];
   }, [disponiveis]);
 
   const figurinhasFiltradas = useMemo(() => {
@@ -39,6 +48,7 @@ export function TrocasFilter({
       }
 
       if (filtroSecao !== 'todas' && fig.secao !== filtroSecao) return false;
+      if (filtroTime !== 'todas' && fig.sigla !== filtroTime) return false;
 
       return true;
     });
@@ -77,6 +87,21 @@ export function TrocasFilter({
             {secoesDisponiveis.map((sec) => (
               <option key={sec} value={sec}>
                 {sec === 'todas' ? 'Todas as seções' : sec}
+              </option>
+            ))}
+          </select>
+
+          <label className="block text-xs font-bold text-gray-400 uppercase mb-2 mt-3">
+            Filtrar por seleção/time:
+          </label>
+          <select
+            className="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-emerald-500"
+            value={filtroTime}
+            onChange={(e) => setFiltroTime(e.target.value)}
+          >
+            {timesDisponiveis.map((sig) => (
+              <option key={sig} value={sig} className="capitalize">
+                {sig === 'todas' ? 'Todas as seleções' : `${sig} — ${disponiveis.find(f => f.sigla===sig)?.pais ?? sig}`}
               </option>
             ))}
           </select>
