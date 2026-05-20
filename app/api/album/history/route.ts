@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { listarHistoricoAlteracoes } from '../../../../app/lib/album-db';
+import { listarHistoricoAlteracoes } from '../../../lib/album-db';
 
 export async function GET() {
   try {

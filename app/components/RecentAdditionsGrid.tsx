@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState, useRef } from 'react';
 import { listaFigurinhas } from '../lib/album';
@@ -11,10 +11,9 @@ type ChangeItem = {
   createdAt: string;
 };
 
-export function RecentAdditions() {
+export function RecentAdditionsGrid() {
   const [items, setItems] = useState<ChangeItem[]>([]);
   const [generating, setGenerating] = useState(false);
-
   const mountedRef = useRef(true);
 
   const carregar = async () => {
@@ -40,7 +39,7 @@ export function RecentAdditions() {
   }, []);
 
   return (
-    <div className="mt-6 bg-gray-800 p-4 rounded-2xl border border-gray-700">
+    <section className="bg-gray-800 p-4 rounded-2xl border border-gray-700 mb-6">
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-sm text-gray-300 font-semibold">Últimas figurinhas adicionadas</h3>
         <div className="flex items-center gap-3">
@@ -53,7 +52,6 @@ export function RecentAdditions() {
               try {
                 const res = await fetch('/api/album/history/regenerate', { method: 'POST' });
                 if (res.ok) {
-                  // reload list
                   await carregar();
                 }
               } catch {
@@ -72,7 +70,7 @@ export function RecentAdditions() {
       {items.length === 0 ? (
         <p className="text-sm text-gray-400">Nenhuma alteração recente registrada.</p>
       ) : (
-        <ul className="text-sm text-gray-200 space-y-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((it) => {
             const meta = listaFigurinhas.find((f) => f.id === it.figurinhaId);
             const label = meta
@@ -81,14 +79,23 @@ export function RecentAdditions() {
             const sign = it.delta >= 0 ? `+${it.delta}` : `${it.delta}`;
 
             return (
-              <li key={it.id} className="flex justify-between">
-                <span>{label}</span>
-                <span className="text-gray-400">{sign} • {new Date(it.createdAt).toLocaleString()}</span>
-              </li>
+              <div key={it.id} className="rounded-lg border border-gray-700 bg-gray-900 p-3 text-sm text-gray-200">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="font-semibold">{label}</div>
+                  <div className={`px-2 py-0.5 rounded text-xs ${it.delta > 0 ? 'bg-green-600 text-white' : 'bg-red-600 text-white'}`}>
+                    {sign}
+                  </div>
+                </div>
+
+                <div className="text-xs text-gray-400 flex items-center justify-between">
+                  <span>{it.source || 'manual'}</span>
+                  <span>{new Date(it.createdAt).toLocaleString()}</span>
+                </div>
+              </div>
             );
           })}
-        </ul>
+        </div>
       )}
-    </div>
+    </section>
   );
 }

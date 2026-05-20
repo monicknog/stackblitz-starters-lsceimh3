@@ -839,3 +839,64 @@ export async function listarHistoricoAlteracoes(limit = 20) {
     database.close();
   }
 }
+
+export async function gerarHistoricoAPartirDoAlbum() {
+  const agora = new Date().toISOString();
+  const cliente = criarClienteTurso();
+
+  // Read current album state
+  const album = await carregarAlbumDoBanco();
+
+  const entries = Object.keys(album)
+    .map((k) => {
+      const qtd = Number((album as any)[k]?.obtidas || album[k] || 0) || 0;
+      if (qtd > 0) return { figurinhaId: k, delta: qtd };
+      return null;
+    })
+    .filter(Boolean) as Array<{ figurinhaId: string; delta: number }>;
+
+  if (cliente) {
+    await garantirSchemaTurso();
+    const transacao = await cliente.transaction('write');
+    try {
+      for (const e of entries) {
+        await transacao.execute({
+          sql: `
+            INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+            VALUES (?, ?, ?, ?, ?)
+          `,
+          args: [randomUUID(), e.figurinhaId, e.delta, 'import', agora],
+        } as any);
+      }
+
+      await transacao.commit();
+      return entries.length;
+    } catch (err) {
+      await transacao.rollback();
+      throw err;
+    } finally {
+      transacao.close();
+    }
+  }
+
+  const database = abrirBanco();
+  try {
+    garantirSchemaLocal(database);
+
+    const insert = database.prepare(`
+      INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+      VALUES (?, ?, ?, ?, ?)
+    `);
+
+    const operacao = database.transaction((items: Array<{ figurinhaId: string; delta: number }>) => {
+      for (const it of items) {
+        insert.run(randomUUID(), it.figurinhaId, it.delta, 'import', agora);
+      }
+    });
+
+    operacao(entries);
+    return entries.length;
+  } finally {
+    database.close();
+  }
+}
