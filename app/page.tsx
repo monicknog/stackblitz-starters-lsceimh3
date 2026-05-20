@@ -9,6 +9,7 @@ import {
   obterAlbumTitulo,
 } from './lib/album';
 import { RecentAdditions } from './components/RecentAdditions';
+import { RecentAdditionsGrid } from './components/RecentAdditionsGrid';
 
 export default function Home() {
   const [album, setAlbum] = useState<EstadoFigurinhas>({});
@@ -24,6 +25,7 @@ export default function Home() {
   const [mensagemLink, setMensagemLink] = useState('');
   const [mensagemBanco, setMensagemBanco] = useState('');
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
+  const [showRecent, setShowRecent] = useState(false);
 
   useEffect(() => {
     let ativo = true;
@@ -330,6 +332,13 @@ export default function Home() {
               >
                 Bloquear novamente
               </button>
+              <button
+                type="button"
+                onClick={() => setShowRecent((s) => !s)}
+                className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors"
+              >
+                {showRecent ? 'Ocultar últimas adições' : 'Mostrar últimas adições'}
+              </button>
             </div>
             {mensagemLink && <p className="text-green-400 text-sm mt-2">{mensagemLink}</p>}
             {mensagemBanco && <p className="text-yellow-400 text-sm mt-2">{mensagemBanco}</p>}
@@ -374,8 +383,10 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <RecentAdditions />
+          {/* toggle moved to left controls */}
         </header>
+
+        {showRecent && <RecentAdditionsGrid />}
 
         {carregandoAlbum ? (
           <section className="bg-gray-800 p-4 rounded-2xl border border-gray-700 mb-6 text-center text-gray-400">

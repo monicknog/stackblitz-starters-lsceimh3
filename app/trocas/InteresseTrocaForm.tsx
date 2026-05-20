@@ -31,10 +31,31 @@ export function InteresseTrocaForm({ disponiveis, faltando }: InteresseTrocaForm
   }, [disponiveis, reservasPorId]);
 
   const opcoesOfertadas = useMemo(() => {
+    // Business rules for allowed offers:
+    // - If desired is Brilhante => offered must be Brilhante
+    // - If desired is Especial (eg. FWC) => offered must be Especial OR Brilhante
+    const desejada = disponiveis.find((d) => d.id === figurinhaDesejadaId);
+    const desejadaTipo = desejada ? (desejada.tipo || '') : '';
+    const exigenciaBrilhante = desejadaTipo.includes('Brilhante');
+    const desejadaEhEspecial = desejadaTipo.includes('Especial');
+
     return faltando
       .filter((fig) => (ofertasPorId[fig.id] || 0) === 0)
+      .filter((fig) => {
+        const tipo = (fig.tipo || '');
+
+        if (exigenciaBrilhante) {
+          return tipo.includes('Brilhante') || tipo.includes('Especial');
+        }
+
+        if (desejadaEhEspecial) {
+          return tipo.includes('Especial') || tipo.includes('Brilhante');
+        }
+
+        return true;
+      })
       .map((fig) => ({ id: fig.id, label: `${fig.id} - ${fig.jogador || fig.secao}` }));
-  }, [faltando, ofertasPorId]);
+  }, [faltando, ofertasPorId, disponiveis, figurinhaDesejadaId]);
 
   // Keep selected ids in sync when available options change
   useEffect(() => {
@@ -94,6 +115,29 @@ export function InteresseTrocaForm({ disponiveis, faltando }: InteresseTrocaForm
 
     if (!nome.trim() || !figurinhaDesejadaId || !figurinhaOfertadaId) {
       setMensagem('Informe seu nome e selecione as duas figurinhas.');
+      return;
+    }
+
+    // Business rules:
+    // - If desired is Brilhante => offered must also be Brilhante
+    // - If desired is Especial => offered must be Especial OR Brilhante
+    const desejadaMeta = disponiveis.find((d) => d.id === figurinhaDesejadaId);
+    const ofertadaMeta = faltando.find((f) => f.id === figurinhaOfertadaId);
+    const desejadaTipo = desejadaMeta ? (desejadaMeta.tipo || '') : '';
+    const ofertadaTipo = ofertadaMeta ? (ofertadaMeta.tipo || '') : '';
+
+    const desejadaEhBrilhante = desejadaTipo.includes('Brilhante');
+    const desejadaEhEspecial = desejadaTipo.includes('Especial');
+    const ofertadaEhBrilhante = ofertadaTipo.includes('Brilhante');
+    const ofertadaEhEspecial = ofertadaTipo.includes('Especial');
+
+    if (desejadaEhBrilhante && !(ofertadaEhBrilhante || ofertadaEhEspecial)) {
+      setMensagem('Esta figurinha brilhante só pode ser trocada por outra figurinha brilhante ou por uma especial.');
+      return;
+    }
+
+    if (desejadaEhEspecial && !(ofertadaEhEspecial || ofertadaEhBrilhante)) {
+      setMensagem('Esta figurinha especial só pode ser trocada por outra especial ou por uma brilhante.');
       return;
     }
 
