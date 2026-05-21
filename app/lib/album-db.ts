@@ -11,6 +11,7 @@ const DB_DIR = path.join(process.cwd(), '.data');
 const DB_PATH = path.join(DB_DIR, 'album.sqlite');
 const ALBUM_ID = 'principal';
 const INTERESSE_TABLE = 'trade_interest_v2';
+const HISTORICO_TABLE = 'album_history';
 const TURSO_URL = process.env.TURSO_DATABASE_URL ?? process.env.LIBSQL_DATABASE_URL;
 const TURSO_AUTH_TOKEN = process.env.TURSO_AUTH_TOKEN ?? process.env.LIBSQL_AUTH_TOKEN;
 
@@ -55,6 +56,13 @@ function abrirBanco() {
       album_json TEXT NOT NULL,
       updated_at TEXT NOT NULL
     )
+    ;CREATE TABLE IF NOT EXISTS ${HISTORICO_TABLE} (
+      id TEXT PRIMARY KEY,
+      figurinha_id TEXT NOT NULL,
+      delta INTEGER NOT NULL,
+      source TEXT,
+      created_at TEXT NOT NULL
+    )
   `);
 
   return database;
@@ -73,6 +81,18 @@ async function garantirSchemaTurso() {
         id TEXT PRIMARY KEY,
         album_json TEXT NOT NULL,
         updated_at TEXT NOT NULL
+      )
+    `,
+  });
+
+  await cliente.execute({
+    sql: `
+      CREATE TABLE IF NOT EXISTS ${HISTORICO_TABLE} (
+        id TEXT PRIMARY KEY,
+        figurinha_id TEXT NOT NULL,
+        delta INTEGER NOT NULL,
+        source TEXT,
+        created_at TEXT NOT NULL
       )
     `,
   });
@@ -114,6 +134,13 @@ function garantirSchemaLocal(database: any) {
       id TEXT PRIMARY KEY,
       album_json TEXT NOT NULL,
       updated_at TEXT NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS ${HISTORICO_TABLE} (
+      id TEXT PRIMARY KEY,
+      figurinha_id TEXT NOT NULL,
+      delta INTEGER NOT NULL,
+      source TEXT,
+      created_at TEXT NOT NULL
     );
     CREATE TABLE IF NOT EXISTS album_changes (
       id TEXT PRIMARY KEY,
@@ -222,6 +249,31 @@ function inserirInteresseLocal(database: any, registro: InteresseTroca) {
       registro.rejectedAt,
       registro.acceptedAt,
     );
+}
+
+function inserirHistoricoLocal(
+  database: any,
+  historico: { id: string; figurinhaId: string; delta: number; source: string; createdAt: string },
+) {
+  database
+    .prepare(`
+      INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
+      VALUES (?, ?, ?, ?, ?)
+    `)
+    .run(historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt);
+}
+
+async function inserirHistoricoTurso(
+  transacao: any,
+  historico: { id: string; figurinhaId: string; delta: number; source: string; createdAt: string },
+) {
+  await transacao.execute({
+    sql: `
+      INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
+      VALUES (?, ?, ?, ?, ?)
+    `,
+    args: [historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt],
+  } as any);
 }
 
 async function inserirInteresseTurso(transacao: any, registro: InteresseTroca) {
@@ -711,13 +763,23 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
     }
 
     for (const c of changes) {
+      const historico = {
+        id: randomUUID(),
+        figurinhaId: c.id,
+        delta: c.delta,
+        source: 'manual',
+        createdAt: now,
+      };
+
       await cliente.execute({
         sql: `
           INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
           VALUES (?, ?, ?, ?, ?)
         `,
-        args: [randomUUID(), c.id, c.delta, 'manual', now],
+        args: [historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt],
       });
+
+      await inserirHistoricoTurso(cliente, historico);
     }
 
     return now;
@@ -761,7 +823,16 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
     `);
 
     for (const c of changes) {
-      insert.run(randomUUID(), c.id, c.delta, 'manual', now);
+      const historico = {
+        id: randomUUID(),
+        figurinhaId: c.id,
+        delta: c.delta,
+        source: 'manual',
+        createdAt: now,
+      };
+
+      insert.run(historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt);
+      inserirHistoricoLocal(database, historico);
     }
 
     return now;
@@ -792,8 +863,16 @@ export async function listarHistoricoAlteracoes(limit = 20) {
 
     const resultado = await cliente.execute({
       sql: `
+        WITH historico AS (
+          SELECT id, figurinha_id, delta, source, created_at
+          FROM ${HISTORICO_TABLE}
+          UNION ALL
+          SELECT id, figurinha_id, delta, source, created_at
+          FROM album_changes
+          WHERE id NOT IN (SELECT id FROM ${HISTORICO_TABLE})
+        )
         SELECT id, figurinha_id, delta, source, created_at
-        FROM album_changes
+        FROM historico
         ORDER BY created_at DESC
         LIMIT ?
       `,
@@ -819,8 +898,16 @@ export async function listarHistoricoAlteracoes(limit = 20) {
 
     const rows = database
       .prepare(`
+        WITH historico AS (
+          SELECT id, figurinha_id, delta, source, created_at
+          FROM ${HISTORICO_TABLE}
+          UNION ALL
+          SELECT id, figurinha_id, delta, source, created_at
+          FROM album_changes
+          WHERE id NOT IN (SELECT id FROM ${HISTORICO_TABLE})
+        )
         SELECT id, figurinha_id, delta, source, created_at
-        FROM album_changes
+        FROM historico
         ORDER BY created_at DESC
         LIMIT ?
       `)
@@ -858,13 +945,23 @@ export async function gerarHistoricoAPartirDoAlbum() {
     const transacao = await cliente.transaction('write');
     try {
       for (const e of entries) {
+        const historico = {
+          id: randomUUID(),
+          figurinhaId: e.figurinhaId,
+          delta: e.delta,
+          source: 'import',
+          createdAt: agora,
+        };
+
         await transacao.execute({
           sql: `
             INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
             VALUES (?, ?, ?, ?, ?)
           `,
-          args: [randomUUID(), e.figurinhaId, e.delta, 'import', agora],
+          args: [historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt],
         } as any);
+
+        await inserirHistoricoTurso(transacao, historico);
       }
 
       await transacao.commit();
@@ -888,7 +985,16 @@ export async function gerarHistoricoAPartirDoAlbum() {
 
     const operacao = database.transaction((items: Array<{ figurinhaId: string; delta: number }>) => {
       for (const it of items) {
-        insert.run(randomUUID(), it.figurinhaId, it.delta, 'import', agora);
+        const historico = {
+          id: randomUUID(),
+          figurinhaId: it.figurinhaId,
+          delta: it.delta,
+          source: 'import',
+          createdAt: agora,
+        };
+
+        insert.run(historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt);
+        inserirHistoricoLocal(database, historico);
       }
     });
 
