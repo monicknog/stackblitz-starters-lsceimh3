@@ -66,7 +66,7 @@ export function InteresseTrocaForm({ disponiveis, faltando }: InteresseTrocaForm
     if (opcoesOfertadas.length > 0 && !opcoesOfertadas.find((o) => o.id === figurinhaOfertadaId)) {
       setFigurinhaOfertadaId(opcoesOfertadas[0].id);
     }
-  }, [opcoesDesejadas, opcoesOfertadas]);
+  }, [figurinhaDesejadaId, figurinhaOfertadaId, opcoesDesejadas, opcoesOfertadas]);
 
   // Load current pending reservations when form opens
   useEffect(() => {

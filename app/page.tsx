@@ -1,6 +1,6 @@
 'use client';
 
-import { type FormEvent, useEffect, useMemo, useState } from 'react';
+import { type FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { FigurinhaCard } from './components/FigurinhaCard';
 import {
   SENHA_PRINCIPAL,
@@ -26,9 +26,19 @@ export default function Home() {
   const [mensagemBanco, setMensagemBanco] = useState('');
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
   const [showRecent, setShowRecent] = useState(false);
+  const lastSavedAtRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    lastSavedAtRef.current = lastSavedAt;
+  }, [lastSavedAt]);
 
   useEffect(() => {
     let ativo = true;
+
+    const desbloqueado = localStorage.getItem('album_copa_2026_autenticado');
+    if (desbloqueado === 'true') {
+      setAutenticado(true);
+    }
 
     const carregarAlbum = async () => {
       try {
@@ -64,7 +74,7 @@ export default function Home() {
         const dados = await res.json();
         const serverUpdatedAt = dados.updatedAt ?? null;
 
-        if (serverUpdatedAt && serverUpdatedAt !== lastSavedAt) {
+        if (serverUpdatedAt && serverUpdatedAt !== lastSavedAtRef.current) {
           // Server has a newer persisted album; update local view
           setAlbum(dados.album || {});
           setLastSavedAt(serverUpdatedAt);
@@ -78,11 +88,6 @@ export default function Home() {
       ativo = false;
       clearInterval(intervalo);
     };
-
-    const desbloqueado = localStorage.getItem('album_copa_2026_autenticado');
-    if (desbloqueado === 'true') {
-      setAutenticado(true);
-    }
   }, []);
 
   const salvarAlbum = (
