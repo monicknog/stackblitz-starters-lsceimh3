@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import type { EstadoFigurinhas } from '../../../../lib/album';
+import type { EstadoFigurinhas } from '../../../lib/album';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
