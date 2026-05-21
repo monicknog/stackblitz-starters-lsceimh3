@@ -99,18 +99,6 @@ async function garantirSchemaTurso() {
 
   await cliente.execute({
     sql: `
-      CREATE TABLE IF NOT EXISTS album_changes (
-        id TEXT PRIMARY KEY,
-        figurinha_id TEXT NOT NULL,
-        delta INTEGER NOT NULL,
-        source TEXT,
-        created_at TEXT NOT NULL
-      )
-    `,
-  });
-
-  await cliente.execute({
-    sql: `
       CREATE TABLE IF NOT EXISTS ${INTERESSE_TABLE} (
         id TEXT PRIMARY KEY,
         nome TEXT NOT NULL,
@@ -136,13 +124,6 @@ function garantirSchemaLocal(database: any) {
       updated_at TEXT NOT NULL
     );
     CREATE TABLE IF NOT EXISTS ${HISTORICO_TABLE} (
-      id TEXT PRIMARY KEY,
-      figurinha_id TEXT NOT NULL,
-      delta INTEGER NOT NULL,
-      source TEXT,
-      created_at TEXT NOT NULL
-    );
-    CREATE TABLE IF NOT EXISTS album_changes (
       id TEXT PRIMARY KEY,
       figurinha_id TEXT NOT NULL,
       delta INTEGER NOT NULL,
@@ -773,13 +754,11 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
 
       await cliente.execute({
         sql: `
-          INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+          INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
           VALUES (?, ?, ?, ?, ?)
         `,
         args: [historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt],
       });
-
-      await inserirHistoricoTurso(cliente, historico);
     }
 
     return now;
@@ -818,7 +797,7 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
     }
 
     const insert = database.prepare(`
-      INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+      INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
       VALUES (?, ?, ?, ?, ?)
     `);
 
@@ -832,7 +811,6 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
       };
 
       insert.run(historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt);
-      inserirHistoricoLocal(database, historico);
     }
 
     return now;
@@ -859,20 +837,19 @@ export async function listarHistoricoAlteracoes(limit = 20) {
   const cliente = criarClienteTurso();
 
   if (cliente) {
-    await garantirSchemaTurso();
+    const contagem = await cliente.execute({
+      sql: `SELECT COUNT(*) AS total FROM ${HISTORICO_TABLE}`,
+    } as any);
+
+    const total = Number((contagem.rows[0] as Record<string, unknown> | undefined)?.total ?? 0);
+    if (total === 0) {
+      await gerarHistoricoAPartirDoAlbum();
+    }
 
     const resultado = await cliente.execute({
       sql: `
-        WITH historico AS (
-          SELECT id, figurinha_id, delta, source, created_at
-          FROM ${HISTORICO_TABLE}
-          UNION ALL
-          SELECT id, figurinha_id, delta, source, created_at
-          FROM album_changes
-          WHERE id NOT IN (SELECT id FROM ${HISTORICO_TABLE})
-        )
         SELECT id, figurinha_id, delta, source, created_at
-        FROM historico
+        FROM ${HISTORICO_TABLE}
         ORDER BY created_at DESC
         LIMIT ?
       `,
@@ -894,20 +871,18 @@ export async function listarHistoricoAlteracoes(limit = 20) {
   const database = abrirBanco();
 
   try {
-    garantirSchemaLocal(database);
+    const linhaContagem = database
+      .prepare(`SELECT COUNT(*) AS total FROM ${HISTORICO_TABLE}`)
+      .get() as { total?: number } | undefined;
+
+    if (Number(linhaContagem?.total ?? 0) === 0) {
+      await gerarHistoricoAPartirDoAlbum();
+    }
 
     const rows = database
       .prepare(`
-        WITH historico AS (
-          SELECT id, figurinha_id, delta, source, created_at
-          FROM ${HISTORICO_TABLE}
-          UNION ALL
-          SELECT id, figurinha_id, delta, source, created_at
-          FROM album_changes
-          WHERE id NOT IN (SELECT id FROM ${HISTORICO_TABLE})
-        )
         SELECT id, figurinha_id, delta, source, created_at
-        FROM historico
+        FROM ${HISTORICO_TABLE}
         ORDER BY created_at DESC
         LIMIT ?
       `)
@@ -955,13 +930,11 @@ export async function gerarHistoricoAPartirDoAlbum() {
 
         await transacao.execute({
           sql: `
-            INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+            INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
             VALUES (?, ?, ?, ?, ?)
           `,
           args: [historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt],
         } as any);
-
-        await inserirHistoricoTurso(transacao, historico);
       }
 
       await transacao.commit();
@@ -979,7 +952,7 @@ export async function gerarHistoricoAPartirDoAlbum() {
     garantirSchemaLocal(database);
 
     const insert = database.prepare(`
-      INSERT INTO album_changes (id, figurinha_id, delta, source, created_at)
+      INSERT INTO ${HISTORICO_TABLE} (id, figurinha_id, delta, source, created_at)
       VALUES (?, ?, ?, ?, ?)
     `);
 
@@ -994,7 +967,6 @@ export async function gerarHistoricoAPartirDoAlbum() {
         };
 
         insert.run(historico.id, historico.figurinhaId, historico.delta, historico.source, historico.createdAt);
-        inserirHistoricoLocal(database, historico);
       }
     });
 
