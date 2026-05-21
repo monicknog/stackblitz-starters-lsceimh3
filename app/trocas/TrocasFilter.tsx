@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { FigurinhaCard } from '../components/FigurinhaCard';
+import { listarSecoesComBandeiras } from '../lib/album';
 import type { FigurinhaComTroca } from '../lib/album';
 
 interface TrocasFilterProps {
@@ -20,8 +21,7 @@ export function TrocasFilter({
   const [filtroTime, setFiltroTime] = useState<string>('todas');
 
   const secoesDisponiveis = useMemo(() => {
-    const secoes = new Set(disponiveis.map((f) => f.secao));
-    return ['todas', ...Array.from(secoes).sort()];
+    return [{ value: 'todas', label: 'Todas as seções' }, ...listarSecoesComBandeiras(disponiveis)];
   }, [disponiveis]);
 
   const timesDisponiveis = useMemo(() => {
@@ -85,8 +85,8 @@ export function TrocasFilter({
             onChange={(e) => setFiltroSecao(e.target.value)}
           >
             {secoesDisponiveis.map((sec) => (
-              <option key={sec} value={sec}>
-                {sec === 'todas' ? 'Todas as seções' : sec}
+              <option key={sec.value} value={sec.value}>
+                {sec.label}
               </option>
             ))}
           </select>
