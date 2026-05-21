@@ -2,7 +2,6 @@ import { FigurinhaCard } from '../components/FigurinhaCard';
 import {
   aplicarReservasEmDisponiveis,
   contarReservasPendentesPorFigurinha,
-  desserializarAlbumDoLink,
   listarDisponiveisParaTroca,
   listarFigurinhasFaltando,
   listaFigurinhas,
@@ -14,16 +13,14 @@ import { TrocasFilter } from './TrocasFilter';
 
 interface PageProps {
   searchParams?: {
+    s?: string;
     album?: string;
   };
 }
 
 export default async function TrocasPage({ searchParams }: PageProps) {
-  const albumDoLink = desserializarAlbumDoLink(searchParams?.album);
-  const album =
-    searchParams?.album && Object.keys(albumDoLink).length > 0
-      ? albumDoLink
-      : await carregarAlbumDoBanco();
+  void searchParams;
+  const album = await carregarAlbumDoBanco();
   const interesses = await listarInteressesDeTroca();
   const reservasPendentesPorId = contarReservasPendentesPorFigurinha(interesses);
   const disponiveisBase = listarDisponiveisParaTroca(album);

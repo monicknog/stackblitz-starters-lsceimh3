@@ -36,14 +36,17 @@ export function ShareLiveStats() {
     (acc, f) => {
       const qtd = Number(album[f.id]?.obtidas ?? album[f.id] ?? 0) || 0;
       if (qtd > 0) acc.preenchidas += 1;
-      if (qtd > 1) acc.repetidas += qtd - 1;
+      if (qtd > 1) {
+        acc.repetidas += qtd - 1;
+        acc.cartasRepetidas += 1;
+      }
       return acc;
     },
-    { total: listaFigurinhas.length, preenchidas: 0, repetidas: 0 },
+    { total: listaFigurinhas.length, preenchidas: 0, repetidas: 0, cartasRepetidas: 0 },
   );
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 max-w-2xl mx-auto">
+    <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-4 mt-6 max-w-4xl mx-auto">
       <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
         <span className="text-xs text-gray-400 block uppercase font-bold">Total</span>
         <span className="text-xl font-bold text-blue-400">{estatisticas.total}</span>
@@ -55,6 +58,14 @@ export function ShareLiveStats() {
       <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
         <span className="text-xs text-gray-400 block uppercase font-bold">Faltam</span>
         <span className="text-xl font-bold text-red-400">{estatisticas.total - estatisticas.preenchidas}</span>
+      </div>
+      <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
+        <span className="text-xs text-gray-400 block uppercase font-bold">Cópias repetidas</span>
+        <span className="text-xl font-bold text-yellow-400">{estatisticas.repetidas}</span>
+      </div>
+      <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
+        <span className="text-xs text-gray-400 block uppercase font-bold">Cartas repetidas</span>
+        <span className="text-xl font-bold text-orange-400">{estatisticas.cartasRepetidas}</span>
       </div>
       {updatedAt ? (
         <div className="col-span-full text-center text-xs text-gray-400 mt-2">Última atualização: {new Date(updatedAt).toLocaleString()}</div>
