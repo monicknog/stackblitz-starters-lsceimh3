@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { FigurinhaCard } from '../components/FigurinhaCard';
-import type { EstadoFigurinhas } from '../lib/album';
+import { listarSecoesComBandeiras, type EstadoFigurinhas } from '../lib/album';
 
 interface ShareFilterProps {
   lista: any[];
@@ -18,8 +18,7 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
   const itens = lista.map((l) => ({ ...l }));
 
   const secoesDisponiveis = useMemo(() => {
-    const s = new Set(itens.map((f) => f.secao));
-    return ['todas', ...Array.from(s).sort()];
+    return [{ value: 'todas', label: 'Todas as seções' }, ...listarSecoesComBandeiras(itens)];
   }, [itens]);
 
   const timesDisponiveis = useMemo(() => {
@@ -73,8 +72,8 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
           onChange={(e) => setFiltroSecao(e.target.value)}
         >
           {secoesDisponiveis.map((s) => (
-            <option key={s} value={s}>
-              {s === 'todas' ? 'Todas as seções' : s}
+            <option key={s.value} value={s.value}>
+              {s.label}
             </option>
           ))}
         </select>

@@ -6,6 +6,7 @@ import {
   SENHA_PRINCIPAL,
   type EstadoFigurinhas,
   listaFigurinhas,
+  listarSecoesComBandeiras,
   obterAlbumTitulo,
 } from './lib/album';
 import { RecentAdditions } from './components/RecentAdditions';
@@ -139,8 +140,7 @@ export default function Home() {
   };
 
   const secoesDisponiveis = useMemo(() => {
-    const secoes = new Set(listaFigurinhas.map((f) => f.secao));
-    return ['todas', ...Array.from(secoes)];
+    return [{ value: 'todas', label: 'Todas as Seções' }, ...listarSecoesComBandeiras(listaFigurinhas)];
   }, []);
 
   const estatisticas = useMemo(() => {
@@ -472,8 +472,8 @@ export default function Home() {
               onChange={(e) => setFiltroSecao(e.target.value)}
             >
               {secoesDisponiveis.map((sec) => (
-                <option key={sec} value={sec}>
-                  {sec === 'todas' ? 'Todas as Seções' : sec}
+                <option key={sec.value} value={sec.value}>
+                  {sec.label}
                 </option>
               ))}
             </select>

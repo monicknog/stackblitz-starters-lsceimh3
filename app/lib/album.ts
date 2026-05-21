@@ -105,3 +105,26 @@ export function desserializarAlbumDoLink(valor: string | string[] | undefined) {
 export function obterAlbumTitulo() {
   return 'Álbum Copa';
 }
+
+export function listarSecoesComBandeiras(figurinhas: Figurinha[]) {
+  const mapa = new Map<string, Set<string>>();
+
+  figurinhas.forEach((figurinha) => {
+    if (!figurinha.secao) return;
+
+    if (!mapa.has(figurinha.secao)) {
+      mapa.set(figurinha.secao, new Set());
+    }
+
+    if (figurinha.sigla) {
+      mapa.get(figurinha.secao)?.add(figurinha.sigla);
+    }
+  });
+
+  return Array.from(mapa.entries())
+    .sort(([a], [b]) => a.localeCompare(b, 'pt-BR'))
+    .map(([secao, bandeiras]) => ({
+      value: secao,
+      label: `${secao}${bandeiras.size ? ` \u00A0\u00A0${Array.from(bandeiras).sort().join('|')}` : ''}`,
+    }));
+}
