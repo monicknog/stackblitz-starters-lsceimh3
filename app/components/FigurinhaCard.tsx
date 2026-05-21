@@ -43,7 +43,10 @@ export function FigurinhaCard({
   }
 
   const titulo = fig.jogador || (fig.numero === 'Escudo' ? 'Escudo' : `Nº ${fig.numero}`);
-  const subtitulo = fig.pais || fig.secao;
+  const grupoCopa = fig.pais && fig.secao?.startsWith('Grupo ') ? fig.secao : null;
+  const subtitulo = fig.pais
+    ? `${fig.pais}${grupoCopa ? ` (${grupoCopa})` : ''}`
+    : fig.secao;
   const isLogoEspecial = Boolean(fig.imagem && (fig.id.startsWith('FWC_') || fig.id.startsWith('CC')));
 
   const mappedFlag = fig.sigla ? iso3map[fig.sigla as keyof typeof iso3map] : undefined;
