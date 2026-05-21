@@ -3,10 +3,12 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+const metadataBase = new URL('http://localhost:3000');
 
 export const metadata: Metadata = {
   title: 'Album Copa Familia Nogueira - 2026',
   description: 'Gerenciador pessoal de figurinhas da Copa 2026',
+  metadataBase,
   openGraph: {
     images: [
       {
