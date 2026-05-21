@@ -140,8 +140,8 @@ function garantirSchemaLocal(database: any) {
 
 function obterAlbumLocal(database: any) {
   const linha = database
-    .prepare('SELECT album_json FROM album_state WHERE id = ? LIMIT 1')
-    .get(ALBUM_ID) as { album_json?: string } | undefined;
+    .prepare('SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+    .get() as { album_json?: string } | undefined;
 
   if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {
     const album = JSON.parse(linha.album_json) as EstadoFigurinhas;
@@ -592,9 +592,8 @@ export async function carregarAlbumDoBanco() {
     await garantirSchemaTurso();
 
     const resultado = await cliente.execute({
-      sql: 'SELECT album_json FROM album_state WHERE id = ? LIMIT 1',
-      args: [ALBUM_ID],
-    });
+      sql: 'SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1',
+    } as any);
 
     const linha = resultado.rows[0] as unknown as AlbumRow | undefined;
 
@@ -613,8 +612,8 @@ export async function carregarAlbumDoBanco() {
 
   try {
     const linha = database
-      .prepare('SELECT album_json FROM album_state WHERE id = ? LIMIT 1')
-      .get(ALBUM_ID) as { album_json?: string } | undefined;
+      .prepare('SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+      .get() as { album_json?: string } | undefined;
 
     if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {
       const album = JSON.parse(linha.album_json) as EstadoFigurinhas;
@@ -635,9 +634,8 @@ export async function carregarAlbumComMeta() {
     await garantirSchemaTurso();
 
     const resultado = await cliente.execute({
-      sql: 'SELECT album_json, updated_at FROM album_state WHERE id = ? LIMIT 1',
-      args: [ALBUM_ID],
-    });
+      sql: 'SELECT album_json, updated_at FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1',
+    } as any);
 
     const linha = resultado.rows[0] as unknown as { album_json?: string; updated_at?: string } | undefined;
 
@@ -656,8 +654,8 @@ export async function carregarAlbumComMeta() {
 
   try {
     const linha = database
-      .prepare('SELECT album_json, updated_at FROM album_state WHERE id = ? LIMIT 1')
-      .get(ALBUM_ID) as { album_json?: string; updated_at?: string } | undefined;
+      .prepare('SELECT album_json, updated_at FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+      .get() as { album_json?: string; updated_at?: string } | undefined;
 
     if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {
       const album = JSON.parse(linha.album_json) as EstadoFigurinhas;

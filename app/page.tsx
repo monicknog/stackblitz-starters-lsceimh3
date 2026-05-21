@@ -141,15 +141,19 @@ export default function Home() {
   const estatisticas = useMemo(() => {
     let preenchidas = 0;
     let repetidas = 0;
+    let cartasRepetidas = 0;
     const total = listaFigurinhas.length;
 
     listaFigurinhas.forEach((f) => {
       const qtd = album[f.id]?.obtidas || 0;
       if (qtd > 0) preenchidas++;
-      if (qtd > 1) repetidas += qtd - 1;
+      if (qtd > 1) {
+        repetidas += qtd - 1;
+        cartasRepetidas += 1;
+      }
     });
 
-    return { total, preenchidas, faltantes: total - preenchidas, repetidas };
+    return { total, preenchidas, faltantes: total - preenchidas, repetidas, cartasRepetidas };
   }, [album]);
 
   const figurinhasFiltradas = useMemo(() => {
@@ -191,6 +195,14 @@ export default function Home() {
     setMensagemSenha('Senha incorreta.');
   };
 
+  const montarUrlCompartilhada = async (caminho: string) => {
+    const url = new URL(caminho, window.location.origin);
+
+    url.searchParams.set('s', '1');
+
+    return url.toString();
+  };
+
   const copiarLinkPublico = async () => {
     try {
       // Ensure the current album is persisted before sharing
@@ -200,7 +212,7 @@ export default function Home() {
         body: JSON.stringify({ album }),
       });
 
-      const url = `${window.location.origin}/compartilhar`;
+      const url = await montarUrlCompartilhada('/compartilhar');
 
       await navigator.clipboard.writeText(url);
       setMensagemLink('Link público copiado.');
@@ -219,7 +231,7 @@ export default function Home() {
         body: JSON.stringify({ album }),
       });
 
-      const url = `${window.location.origin}/trocas`;
+      const url = await montarUrlCompartilhada('/trocas');
 
       await navigator.clipboard.writeText(url);
       setMensagemLink('Link de troca copiado.');
@@ -238,7 +250,7 @@ export default function Home() {
         body: JSON.stringify({ album }),
       });
 
-      const url = `${window.location.origin}/interessados`;
+      const url = await montarUrlCompartilhada('/interessados');
 
       await navigator.clipboard.writeText(url);
       setMensagemLink('Link de interessados copiado.');
@@ -344,7 +356,7 @@ export default function Home() {
             {mensagemBanco && <p className="text-yellow-400 text-sm mt-2">{mensagemBanco}</p>}
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 lg:mt-0">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mt-6 lg:mt-0">
             <div className="bg-gray-800 p-3 rounded-xl border border-gray-700 text-center">
               <span className="text-xs text-gray-400 block uppercase font-bold">
                 Total
@@ -376,10 +388,18 @@ export default function Home() {
             </div>
             <div className="bg-gray-800 p-3 rounded-xl border border-gray-700 text-center">
               <span className="text-xs text-gray-400 block uppercase font-bold">
-                Repetidas
+                Cópias repetidas
               </span>
               <span className="text-xl font-bold text-yellow-400">
                 {estatisticas.repetidas}
+              </span>
+            </div>
+            <div className="bg-gray-800 p-3 rounded-xl border border-gray-700 text-center">
+              <span className="text-xs text-gray-400 block uppercase font-bold">
+                Cartas repetidas
+              </span>
+              <span className="text-xl font-bold text-orange-400">
+                {estatisticas.cartasRepetidas}
               </span>
             </div>
           </div>

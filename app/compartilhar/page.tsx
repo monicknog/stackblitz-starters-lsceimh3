@@ -2,7 +2,6 @@ import { FigurinhaCard } from '../components/FigurinhaCard';
 import { ShareFilter } from './ShareFilter';
 import { ShareLiveStats } from './ShareLiveStats';
 import {
-  desserializarAlbumDoLink,
   listaFigurinhas,
   obterAlbumTitulo,
 } from '../lib/album';
@@ -10,13 +9,13 @@ import { carregarAlbumDoBanco } from '../lib/album-db';
 
 interface PageProps {
   searchParams?: {
+    s?: string;
     album?: string;
   };
 }
 
 export default async function SharePage({ searchParams }: PageProps) {
-  // Always read the persisted album from the database so public view
-  // matches the protected main page's persisted state.
+  void searchParams?.s;
   const album = await carregarAlbumDoBanco();
 
   const estatisticas = listaFigurinhas.reduce(
