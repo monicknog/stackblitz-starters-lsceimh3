@@ -1,6 +1,7 @@
 'use client';
 
 import { type FormEvent, useEffect, useMemo, useState } from 'react';
+import { ClearableTextInput } from '../components/ClearableTextInput';
 import { SENHA_PRINCIPAL, type InteresseTroca } from '../lib/album';
 
 const CHAVE_AUTENTICACAO = 'album_copa_2026_autenticado';
@@ -209,10 +210,9 @@ export default function InteressadosPage() {
         </header>
 
         <section className="mb-4 grid grid-cols-1 gap-3">
-          <input
-            type="text"
+          <ClearableTextInput
             value={busca}
-            onChange={(e) => setBusca(e.target.value)}
+            onChange={setBusca}
             placeholder="Buscar por nome ou figurinha"
             className="w-full rounded-xl border border-gray-700 bg-gray-900 px-3 py-2 text-white focus:border-red-500 focus:outline-none"
           />

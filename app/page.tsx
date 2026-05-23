@@ -1,6 +1,7 @@
 'use client';
 
 import { type FormEvent, useEffect, useMemo, useRef, useState } from 'react';
+import { ClearableTextInput } from './components/ClearableTextInput';
 import { FigurinhaCard } from './components/FigurinhaCard';
 import {
   SENHA_PRINCIPAL,
@@ -424,12 +425,11 @@ export default function Home() {
             <label className="block text-xs font-bold text-gray-400 uppercase mb-2">
               Buscar jogador, código ou país:
             </label>
-            <input
-              type="text"
+            <ClearableTextInput
               placeholder="Ex: Alisson, BRA_10, México..."
               className="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-red-500"
               value={busca}
-              onChange={(e) => setBusca(e.target.value)}
+              onChange={setBusca}
             />
           </div>
 

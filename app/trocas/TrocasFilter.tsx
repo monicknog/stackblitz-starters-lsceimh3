@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { ClearableTextInput } from '../components/ClearableTextInput';
 import { FigurinhaCard } from '../components/FigurinhaCard';
 import { listarSecoesComBandeiras } from '../lib/album';
 import type { FigurinhaComTroca } from '../lib/album';
@@ -66,12 +67,11 @@ export function TrocasFilter({
           <label className="block text-xs font-bold text-gray-400 uppercase mb-2">
             Buscar por nome, código ou país:
           </label>
-          <input
-            type="text"
+          <ClearableTextInput
             placeholder="Ex: Brasil, BRA_1, Neymar..."
             className="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-emerald-500"
             value={busca}
-            onChange={(e) => setBusca(e.target.value)}
+            onChange={setBusca}
           />
         </div>
 

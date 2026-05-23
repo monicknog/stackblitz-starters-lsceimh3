@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from 'react';
+import { ClearableTextInput } from '../components/ClearableTextInput';
 import { FigurinhaCard } from '../components/FigurinhaCard';
 import { listarSecoesComBandeiras, type EstadoFigurinhas } from '../lib/album';
 
@@ -58,12 +59,11 @@ export function ShareFilter({ lista, album }: ShareFilterProps) {
   return (
     <>
       <section className="mb-4 grid grid-cols-1 md:grid-cols-4 gap-3">
-        <input
-          type="text"
+        <ClearableTextInput
           placeholder="Buscar: nome, código, país"
           className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-white"
           value={busca}
-          onChange={(e) => setBusca(e.target.value)}
+          onChange={setBusca}
         />
 
         <select
