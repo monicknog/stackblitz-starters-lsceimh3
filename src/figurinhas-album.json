@@ -648,18 +648,6 @@
     "imagem": "https://scanini.app/og/sticker/mexico-20-cesar-huerta.png"
   },
   {
-    "id": "MEX_21",
-    "secao": "Grupo A",
-    "pais": "México",
-    "sigla": "MEX",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "RSA_ESCUDO",
     "secao": "Grupo A",
     "pais": "África do Sul",
@@ -898,18 +886,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/south-africa-20-oswin-appollis.png"
-  },
-  {
-    "id": "RSA_21",
-    "secao": "Grupo A",
-    "pais": "África do Sul",
-    "sigla": "RSA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "KOR_ESCUDO",
@@ -1152,18 +1128,6 @@
     "imagem": "https://scanini.app/og/sticker/south-korea-20-hyeon-gyu-oh.png"
   },
   {
-    "id": "KOR_21",
-    "secao": "Grupo A",
-    "pais": "Coreia do Sul",
-    "sigla": "KOR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "CZE_ESCUDO",
     "secao": "Grupo A",
     "pais": "Rep. Tcheca",
@@ -1402,18 +1366,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/czechia-20-patrik-schick.png"
-  },
-  {
-    "id": "CZE_21",
-    "secao": "Grupo A",
-    "pais": "Rep. Tcheca",
-    "sigla": "CZE",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "CAN_ESCUDO",
@@ -1656,18 +1608,6 @@
     "imagem": "https://scanini.app/og/sticker/canada-20-jonathan-david.png"
   },
   {
-    "id": "CAN_21",
-    "secao": "Grupo B",
-    "pais": "Canadá",
-    "sigla": "CAN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "BIH_ESCUDO",
     "secao": "Grupo B",
     "pais": "Bósnia",
@@ -1906,18 +1846,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/bosnia-and-herzegovina-20-haris-tabakovic.png"
-  },
-  {
-    "id": "BIH_21",
-    "secao": "Grupo B",
-    "pais": "Bósnia",
-    "sigla": "BIH",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "QAT_ESCUDO",
@@ -2160,18 +2088,6 @@
     "imagem": "https://scanini.app/og/sticker/qatar-20-almoez-ali.png"
   },
   {
-    "id": "QAT_21",
-    "secao": "Grupo B",
-    "pais": "Catar",
-    "sigla": "QAT",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "SUI_ESCUDO",
     "secao": "Grupo B",
     "pais": "Suíça",
@@ -2410,18 +2326,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/switzerland-20-zeki-amdouni.png"
-  },
-  {
-    "id": "SUI_21",
-    "secao": "Grupo B",
-    "pais": "Suíça",
-    "sigla": "SUI",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "BRA_ESCUDO",
@@ -2664,18 +2568,6 @@
     "imagem": "https://scanini.app/og/sticker/brazil-20-estevao.png"
   },
   {
-    "id": "BRA_21",
-    "secao": "Grupo C",
-    "pais": "Brasil",
-    "sigla": "BRA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "MAR_ESCUDO",
     "secao": "Grupo C",
     "pais": "Marrocos",
@@ -2914,18 +2806,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/morocco-20-ayoub-el-kaabi.png"
-  },
-  {
-    "id": "MAR_21",
-    "secao": "Grupo C",
-    "pais": "Marrocos",
-    "sigla": "MAR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "HAI_ESCUDO",
@@ -3168,18 +3048,6 @@
     "imagem": "https://scanini.app/og/sticker/haiti-20-frantzdy-pierrot.png"
   },
   {
-    "id": "HAI_21",
-    "secao": "Grupo C",
-    "pais": "Haiti",
-    "sigla": "HAI",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "SCO_ESCUDO",
     "secao": "Grupo C",
     "pais": "Escócia",
@@ -3418,18 +3286,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/scotland-20-ben-gannon-doak.png"
-  },
-  {
-    "id": "SCO_21",
-    "secao": "Grupo C",
-    "pais": "Escócia",
-    "sigla": "SCO",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "USA_ESCUDO",
@@ -3672,18 +3528,6 @@
     "imagem": "https://scanini.app/og/sticker/united-states-20-folarin-balogun.png"
   },
   {
-    "id": "USA_21",
-    "secao": "Grupo D",
-    "pais": "Estados Unidos",
-    "sigla": "USA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "PAR_ESCUDO",
     "secao": "Grupo D",
     "pais": "Paraguai",
@@ -3922,18 +3766,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/paraguay-20-antonio-sanabria.png"
-  },
-  {
-    "id": "PAR_21",
-    "secao": "Grupo D",
-    "pais": "Paraguai",
-    "sigla": "PAR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "AUS_ESCUDO",
@@ -4176,18 +4008,6 @@
     "imagem": "https://scanini.app/og/sticker/australia-20-mohamed-toure.png"
   },
   {
-    "id": "AUS_21",
-    "secao": "Grupo D",
-    "pais": "Austrália",
-    "sigla": "AUS",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "TUR_ESCUDO",
     "secao": "Grupo D",
     "pais": "Turquia",
@@ -4426,18 +4246,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/turkey-20-kenan-yildiz.png"
-  },
-  {
-    "id": "TUR_21",
-    "secao": "Grupo D",
-    "pais": "Turquia",
-    "sigla": "TUR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "GER_ESCUDO",
@@ -4680,18 +4488,6 @@
     "imagem": "https://scanini.app/og/sticker/germany-20-nick-woltemade.png"
   },
   {
-    "id": "GER_21",
-    "secao": "Grupo E",
-    "pais": "Alemanha",
-    "sigla": "GER",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "CUW_ESCUDO",
     "secao": "Grupo E",
     "pais": "Curaçao",
@@ -4930,18 +4726,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/curacao-20-sontje-hansen.png"
-  },
-  {
-    "id": "CUW_21",
-    "secao": "Grupo E",
-    "pais": "Curaçao",
-    "sigla": "CUW",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "CIV_ESCUDO",
@@ -5184,18 +4968,6 @@
     "imagem": "https://scanini.app/og/sticker/cote-divoire-20-oumar-diakite.png"
   },
   {
-    "id": "CIV_21",
-    "secao": "Grupo E",
-    "pais": "Costa do Marfim",
-    "sigla": "CIV",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "ECU_ESCUDO",
     "secao": "Grupo E",
     "pais": "Equador",
@@ -5434,18 +5206,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/ecuador-20-enner-valencia.png"
-  },
-  {
-    "id": "ECU_21",
-    "secao": "Grupo E",
-    "pais": "Equador",
-    "sigla": "ECU",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "NED_ESCUDO",
@@ -5688,18 +5448,6 @@
     "imagem": "https://scanini.app/og/sticker/netherlands-20-cody-gakpo.png"
   },
   {
-    "id": "NED_21",
-    "secao": "Grupo F",
-    "pais": "Holanda",
-    "sigla": "NED",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "JPN_ESCUDO",
     "secao": "Grupo F",
     "pais": "Japão",
@@ -5938,18 +5686,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/japan-20-ayase-ueda.png"
-  },
-  {
-    "id": "JPN_21",
-    "secao": "Grupo F",
-    "pais": "Japão",
-    "sigla": "JPN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "SWE_ESCUDO",
@@ -6192,18 +5928,6 @@
     "imagem": "https://scanini.app/og/sticker/sweden-20-viktor-gyokeres.png"
   },
   {
-    "id": "SWE_21",
-    "secao": "Grupo F",
-    "pais": "Suécia",
-    "sigla": "SWE",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "TUN_ESCUDO",
     "secao": "Grupo F",
     "pais": "Tunísia",
@@ -6442,18 +6166,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/tunisia-20-naim-sliti.png"
-  },
-  {
-    "id": "TUN_21",
-    "secao": "Grupo F",
-    "pais": "Tunísia",
-    "sigla": "TUN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "BEL_ESCUDO",
@@ -6696,18 +6408,6 @@
     "imagem": "https://scanini.app/og/sticker/belgium-20-romelu-lukaku.png"
   },
   {
-    "id": "BEL_21",
-    "secao": "Grupo G",
-    "pais": "Bélgica",
-    "sigla": "BEL",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "EGY_ESCUDO",
     "secao": "Grupo G",
     "pais": "Egito",
@@ -6946,18 +6646,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/egypt-20-omar-marmoush.png"
-  },
-  {
-    "id": "EGY_21",
-    "secao": "Grupo G",
-    "pais": "Egito",
-    "sigla": "EGY",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "IRN_ESCUDO",
@@ -7200,18 +6888,6 @@
     "imagem": "https://scanini.app/og/sticker/iran-20-ali-gholizadeh.png"
   },
   {
-    "id": "IRN_21",
-    "secao": "Grupo G",
-    "pais": "Irã",
-    "sigla": "IRN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "NZL_ESCUDO",
     "secao": "Grupo G",
     "pais": "Nova Zelândia",
@@ -7450,18 +7126,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/new-zealand-20-kosta-barbarouses.png"
-  },
-  {
-    "id": "NZL_21",
-    "secao": "Grupo G",
-    "pais": "Nova Zelândia",
-    "sigla": "NZL",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "ESP_ESCUDO",
@@ -7704,18 +7368,6 @@
     "imagem": "https://scanini.app/og/sticker/spain-20-mikel-oyarzabal.png"
   },
   {
-    "id": "ESP_21",
-    "secao": "Grupo H",
-    "pais": "Espanha",
-    "sigla": "ESP",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "CPV_ESCUDO",
     "secao": "Grupo H",
     "pais": "Cabo Verde",
@@ -7954,18 +7606,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/cape-verde-20-bebe.png"
-  },
-  {
-    "id": "CPV_21",
-    "secao": "Grupo H",
-    "pais": "Cabo Verde",
-    "sigla": "CPV",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "KSA_ESCUDO",
@@ -8208,18 +7848,6 @@
     "imagem": "https://scanini.app/og/sticker/saudi-arabia-20-abdullah-al-hamdan.png"
   },
   {
-    "id": "KSA_21",
-    "secao": "Grupo H",
-    "pais": "Arábia Saudita",
-    "sigla": "KSA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "URU_ESCUDO",
     "secao": "Grupo H",
     "pais": "Uruguai",
@@ -8458,18 +8086,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/uruguay-20-facundo-pellistri.png"
-  },
-  {
-    "id": "URU_21",
-    "secao": "Grupo H",
-    "pais": "Uruguai",
-    "sigla": "URU",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "FRA_ESCUDO",
@@ -8712,18 +8328,6 @@
     "imagem": "https://scanini.app/og/sticker/france-20-kylian-mbappe.png"
   },
   {
-    "id": "FRA_21",
-    "secao": "Grupo I",
-    "pais": "França",
-    "sigla": "FRA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "SEN_ESCUDO",
     "secao": "Grupo I",
     "pais": "Senegal",
@@ -8962,18 +8566,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/senegal-20-krepin-diatta.png"
-  },
-  {
-    "id": "SEN_21",
-    "secao": "Grupo I",
-    "pais": "Senegal",
-    "sigla": "SEN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "IRQ_ESCUDO",
@@ -9216,18 +8808,6 @@
     "imagem": "https://scanini.app/og/sticker/iraq-20-mohanad-ali.png"
   },
   {
-    "id": "IRQ_21",
-    "secao": "Grupo I",
-    "pais": "Iraque",
-    "sigla": "IRQ",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "NOR_ESCUDO",
     "secao": "Grupo I",
     "pais": "Noruega",
@@ -9466,18 +9046,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/norway-20-oscar-bobb.png"
-  },
-  {
-    "id": "NOR_21",
-    "secao": "Grupo I",
-    "pais": "Noruega",
-    "sigla": "NOR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "ARG_ESCUDO",
@@ -9720,18 +9288,6 @@
     "imagem": "https://scanini.app/og/sticker/argentina-20-giuliano-simeone.png"
   },
   {
-    "id": "ARG_21",
-    "secao": "Grupo J",
-    "pais": "Argentina",
-    "sigla": "ARG",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "ALG_ESCUDO",
     "secao": "Grupo J",
     "pais": "Algéria",
@@ -9970,18 +9526,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/algeria-20-mohammed-amoura.png"
-  },
-  {
-    "id": "ALG_21",
-    "secao": "Grupo J",
-    "pais": "Algéria",
-    "sigla": "ALG",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "AUT_ESCUDO",
@@ -10224,18 +9768,6 @@
     "imagem": "https://scanini.app/og/sticker/austria-20-marko-arnautovic.png"
   },
   {
-    "id": "AUT_21",
-    "secao": "Grupo J",
-    "pais": "Áustria",
-    "sigla": "AUT",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "JOR_ESCUDO",
     "secao": "Grupo J",
     "pais": "Jordânia",
@@ -10474,18 +10006,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/jordan-20-ibrahim-sabra.png"
-  },
-  {
-    "id": "JOR_21",
-    "secao": "Grupo J",
-    "pais": "Jordânia",
-    "sigla": "JOR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "POR_ESCUDO",
@@ -10728,18 +10248,6 @@
     "imagem": "https://scanini.app/og/sticker/portugal-20-rafael-leao.png"
   },
   {
-    "id": "POR_21",
-    "secao": "Grupo K",
-    "pais": "Portugal",
-    "sigla": "POR",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "COD_ESCUDO",
     "secao": "Grupo K",
     "pais": "Congo",
@@ -10978,18 +10486,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/dr-congo-20-nathanael-mbuku.png"
-  },
-  {
-    "id": "COD_21",
-    "secao": "Grupo K",
-    "pais": "Congo",
-    "sigla": "COD",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "UZB_ESCUDO",
@@ -11232,18 +10728,6 @@
     "imagem": "https://scanini.app/og/sticker/uzbekistan-20-abbosbek-fayzullaev.png"
   },
   {
-    "id": "UZB_21",
-    "secao": "Grupo K",
-    "pais": "Uzbequistão",
-    "sigla": "UZB",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "COL_ESCUDO",
     "secao": "Grupo K",
     "pais": "Colômbia",
@@ -11482,18 +10966,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/colombia-20-luis-diaz.png"
-  },
-  {
-    "id": "COL_21",
-    "secao": "Grupo K",
-    "pais": "Colômbia",
-    "sigla": "COL",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "ENG_ESCUDO",
@@ -11736,18 +11208,6 @@
     "imagem": "https://scanini.app/og/sticker/england-20-ollie-watkins.png"
   },
   {
-    "id": "ENG_21",
-    "secao": "Grupo L",
-    "pais": "Inglaterra",
-    "sigla": "ENG",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "CRO_ESCUDO",
     "secao": "Grupo L",
     "pais": "Croácia",
@@ -11986,18 +11446,6 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/croatia-20-franjo-ivanovic.png"
-  },
-  {
-    "id": "CRO_21",
-    "secao": "Grupo L",
-    "pais": "Croácia",
-    "sigla": "CRO",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   },
   {
     "id": "GHA_ESCUDO",
@@ -12240,18 +11688,6 @@
     "imagem": "https://scanini.app/og/sticker/ghana-20-antoine-semenyo.png"
   },
   {
-    "id": "GHA_21",
-    "secao": "Grupo L",
-    "pais": "Gana",
-    "sigla": "GHA",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
-  },
-  {
     "id": "PAN_ESCUDO",
     "secao": "Grupo L",
     "pais": "Panamá",
@@ -12490,17 +11926,5 @@
     "tipojogador": "jogador",
     "ordem_album": 18,
     "imagem": "https://scanini.app/og/sticker/panama-20-alberto-quintero.png"
-  },
-  {
-    "id": "PAN_21",
-    "secao": "Grupo L",
-    "pais": "Panamá",
-    "sigla": "PAN",
-    "numero": "21",
-    "tipo": "Jogador",
-    "jogador": null,
-    "tipojogador": "reservado",
-    "ordem_album": 21,
-    "imagem": null
   }
 ]
