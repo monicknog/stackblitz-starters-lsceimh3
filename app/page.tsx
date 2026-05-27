@@ -29,6 +29,7 @@ export default function Home() {
   const [mensagemBanco, setMensagemBanco] = useState('');
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
   const [showRecent, setShowRecent] = useState(false);
+  const [secaoAberta, setSecaoAberta] = useState<Record<string, boolean>>({});
   const lastSavedAtRef = useRef<string | null>(null);
 
   useEffect(() => {
@@ -188,6 +189,36 @@ export default function Home() {
       return true;
     });
   }, [album, filtroStatus, filtroSecao, busca]);
+
+  const figurinhasAgrupadas = useMemo(() => {
+    const grupos = new Map<string, typeof listaFigurinhas>();
+
+    figurinhasFiltradas.forEach((fig) => {
+      const chave = fig.secao || 'Sem seção';
+      const itens = grupos.get(chave);
+
+      if (itens) {
+        itens.push(fig);
+        return;
+      }
+
+      grupos.set(chave, [fig]);
+    });
+
+    return Array.from(grupos.entries()).map(([secao, itens]) => ({ secao, itens }));
+  }, [figurinhasFiltradas]);
+
+  useEffect(() => {
+    setSecaoAberta((estadoAtual) => {
+      const proximo: Record<string, boolean> = {};
+
+      figurinhasAgrupadas.forEach(({ secao }, indice) => {
+        proximo[secao] = estadoAtual[secao] ?? indice === 0;
+      });
+
+      return proximo;
+    });
+  }, [figurinhasAgrupadas]);
 
   const confirmarSenha = (evento: FormEvent<HTMLFormElement>) => {
     evento.preventDefault();
@@ -501,16 +532,64 @@ export default function Home() {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              {figurinhasFiltradas.map((fig) => (
-                <FigurinhaCard
-                  key={fig.id}
-                  fig={fig}
-                  qtd={album[fig.id]?.obtidas || 0}
-                  onAdicionar={() => adicionarFigurinha(fig.id)}
-                  onRemover={() => removerFigurinha(fig.id)}
-                />
-              ))}
+            <div className="space-y-4">
+              {figurinhasAgrupadas.map(({ secao, itens }) => {
+                const aberta = secaoAberta[secao] ?? false;
+                const totalSecao = itens.length;
+                const preenchidasSecao = itens.reduce((acc, fig) => {
+                  return acc + ((album[fig.id]?.obtidas || 0) > 0 ? 1 : 0);
+                }, 0);
+
+                return (
+                  <section
+                    key={secao}
+                    className="rounded-2xl border border-gray-700 bg-gray-800 overflow-hidden"
+                  >
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSecaoAberta((estadoAtual) => ({
+                          ...estadoAtual,
+                          [secao]: !(estadoAtual[secao] ?? false),
+                        }))
+                      }
+                      className="w-full flex items-center justify-between gap-4 px-4 py-3 text-left hover:bg-gray-700/40 transition-colors"
+                    >
+                      <div className="min-w-0">
+                        <h3 className="text-base sm:text-lg font-bold text-white truncate">
+                          {secao}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-gray-400">
+                          {preenchidasSecao}/{totalSecao} figurinhas visíveis neste bloco
+                        </p>
+                      </div>
+
+                      <div className="flex items-center gap-3 shrink-0">
+                        <span className="rounded-full bg-gray-900 px-3 py-1 text-xs font-bold text-gray-300 border border-gray-700">
+                          {totalSecao}
+                        </span>
+                        <span className="text-gray-400 text-sm">{aberta ? '▾' : '▸'}</span>
+                      </div>
+                    </button>
+
+                    {aberta ? (
+                      <div className="border-t border-gray-700 p-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+                          {itens.map((fig) => (
+                            <FigurinhaCard
+                              key={fig.id}
+                              fig={fig}
+                              qtd={album[fig.id]?.obtidas || 0}
+                              onAdicionar={() => adicionarFigurinha(fig.id)}
+                              onRemover={() => removerFigurinha(fig.id)}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+                  </section>
+                );
+              })}
             </div>
           )}
         </main>
