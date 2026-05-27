@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { type FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { ClearableTextInput } from './components/ClearableTextInput';
 import { FigurinhaCard } from './components/FigurinhaCard';
@@ -340,6 +341,12 @@ export default function Home() {
               >
                 Copiar link interessados
               </button>
+              <Link
+                href="/avaliar-troca"
+                className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-colors"
+              >
+                Avaliar Troca
+              </Link>
               <button
                 type="button"
                 onClick={() => {
@@ -511,6 +518,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
