@@ -344,9 +344,11 @@ export default function Home() {
       if (typeof navigator !== 'undefined' && 'share' in navigator) {
         await navigator.share({ title: titulo, text: texto, url });
         setMensagemLink(mensagemSucesso);
-      } else {
-        await navigator.clipboard.writeText(url);
+      } else if (typeof navigator !== 'undefined' && 'clipboard' in navigator) {
+        await (navigator as any).clipboard.writeText(url);
         setMensagemLink(`${mensagemSucesso} (copiado)`);
+      } else {
+        setMensagemLink(`${mensagemSucesso} (não suportado)`);
       }
 
       window.setTimeout(() => setMensagemLink(''), 2500);

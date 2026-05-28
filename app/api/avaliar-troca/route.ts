@@ -352,7 +352,9 @@ export async function POST(request: Request) {
     let debugReason = 'fallback_sem_tentativa';
     let debugErrorMessage = '';
     try {
-      const gemini = consultarGemini ? await avaliarComGemini(minha, oferecida, quantidade, observacoes) : null;
+      const gemini = consultarGemini
+        ? await avaliarComGemini(minha, oferecida as (typeof listaFigurinhas)[number], quantidade, observacoes)
+        : null;
       if (gemini) {
         if (process.env.NODE_ENV !== 'production') {
           return NextResponse.json({ ok: true, avaliacao: gemini, debug: { used: 'gemini' } });
