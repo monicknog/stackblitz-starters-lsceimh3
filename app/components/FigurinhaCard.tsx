@@ -141,14 +141,14 @@ export function FigurinhaCard({
         <div
           className={`mt-auto pt-3 flex items-center ${
             readOnly ? 'justify-center' : 'justify-between'
-          }`}
+          } ${readOnly ? '' : 'gap-2'}`}
         >
           {!readOnly && (
             <button
               type="button"
               onClick={onRemover}
               disabled={qtd === 0}
-              className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-lg transition-colors ${
+              className={`w-6 h-6 rounded-md flex items-center justify-center font-bold text-sm transition-colors ${
                 qtd > 0
                   ? 'bg-gray-700 hover:bg-gray-600 text-white'
                   : 'bg-gray-800 text-gray-600 cursor-not-allowed'
@@ -160,7 +160,7 @@ export function FigurinhaCard({
           )}
 
           <span
-            className={`font-mono font-bold text-lg ${
+            className={`min-w-[1.25rem] text-center font-mono font-bold text-sm ${
               qtd > 1
                 ? 'text-yellow-400'
                 : qtd === 1
@@ -175,7 +175,7 @@ export function FigurinhaCard({
             <button
               type="button"
               onClick={onAdicionar}
-              className="w-8 h-8 bg-red-600 hover:bg-red-500 text-white rounded-lg flex items-center justify-center font-bold text-lg transition-colors"
+              className="w-6 h-6 bg-red-600 hover:bg-red-500 text-white rounded-md flex items-center justify-center font-bold text-sm transition-colors"
               aria-label={`Adicionar ${fig.id}`}
             >
               +

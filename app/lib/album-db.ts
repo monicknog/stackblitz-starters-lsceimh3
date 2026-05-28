@@ -148,7 +148,7 @@ function garantirSchemaLocal(database: any) {
 
 function obterAlbumLocal(database: any) {
   const linha = database
-    .prepare('SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+    .prepare('SELECT album_json FROM album_state ORDER BY updated_at DESC, id DESC LIMIT 1')
     .get() as { album_json?: string } | undefined;
 
   if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {
@@ -538,6 +538,22 @@ export async function atualizarStatusInteresse(interesseId: string, status: Inte
           `,
           args: [ALBUM_ID, JSON.stringify(album), agora],
         } as any);
+
+        await inserirHistoricoTurso(transacao, {
+          id: randomUUID(),
+          figurinhaId: desejadaId,
+          delta: -1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+
+        await inserirHistoricoTurso(transacao, {
+          id: randomUUID(),
+          figurinhaId: ofertadaId,
+          delta: 1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
       }
 
       await transacao.execute({
@@ -600,6 +616,22 @@ export async function atualizarStatusInteresse(interesseId: string, status: Inte
               updated_at = excluded.updated_at
           `)
           .run(ALBUM_ID, JSON.stringify(album), agora);
+
+        inserirHistoricoLocal(database, {
+          id: randomUUID(),
+          figurinhaId: desejadaId,
+          delta: -1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+
+        inserirHistoricoLocal(database, {
+          id: randomUUID(),
+          figurinhaId: ofertadaId,
+          delta: 1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
       }
 
       database
@@ -625,7 +657,7 @@ export async function carregarAlbumDoBanco() {
     await garantirSchemaTurso();
 
     const resultado = await cliente.execute({
-      sql: 'SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1',
+      sql: 'SELECT album_json FROM album_state ORDER BY updated_at DESC, id DESC LIMIT 1',
     } as any);
 
     const linha = resultado.rows[0] as unknown as AlbumRow | undefined;
@@ -645,7 +677,7 @@ export async function carregarAlbumDoBanco() {
 
   try {
     const linha = database
-      .prepare('SELECT album_json FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+      .prepare('SELECT album_json FROM album_state ORDER BY updated_at DESC, id DESC LIMIT 1')
       .get() as { album_json?: string } | undefined;
 
     if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {
@@ -667,7 +699,7 @@ export async function carregarAlbumComMeta() {
     await garantirSchemaTurso();
 
     const resultado = await cliente.execute({
-      sql: 'SELECT album_json, updated_at FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1',
+      sql: 'SELECT album_json, updated_at FROM album_state ORDER BY updated_at DESC, id DESC LIMIT 1',
     } as any);
 
     const linha = resultado.rows[0] as unknown as { album_json?: string; updated_at?: string } | undefined;
@@ -687,7 +719,7 @@ export async function carregarAlbumComMeta() {
 
   try {
     const linha = database
-      .prepare('SELECT album_json, updated_at FROM album_state ORDER BY updated_at ASC, id ASC LIMIT 1')
+      .prepare('SELECT album_json, updated_at FROM album_state ORDER BY updated_at DESC, id DESC LIMIT 1')
       .get() as { album_json?: string; updated_at?: string } | undefined;
 
     if (typeof linha?.album_json === 'string' && linha.album_json.trim()) {

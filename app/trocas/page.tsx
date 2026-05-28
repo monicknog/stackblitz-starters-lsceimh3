@@ -1,4 +1,3 @@
-import { FigurinhaCard } from '../components/FigurinhaCard';
 import {
   aplicarReservasEmDisponiveis,
   contarReservasPendentesPorFigurinha,
@@ -8,8 +7,7 @@ import {
   obterAlbumTitulo,
 } from '../lib/album';
 import { carregarAlbumDoBanco, listarInteressesDeTroca } from '../lib/album-db';
-import { InteresseTrocaForm } from './InteresseTrocaForm';
-import { TrocasFilter } from './TrocasFilter';
+import { TrocasPageClient } from './TrocasPageClient';
 
 interface PageProps {
   searchParams?: {
@@ -31,55 +29,38 @@ export default async function TrocasPage({ searchParams }: PageProps) {
     (acumulado, figurinha) => acumulado + figurinha.disponiveisParaTroca,
     0,
   );
+  const potencialTroca = faltando.length > 0 ? (totalDisponiveis / faltando.length) * 100 : 0;
+  const secoesComDeficit = Array.from(
+    listaFigurinhas.reduce((mapa, fig) => {
+      const secao = fig.secao || 'Sem secao';
+      const atual = mapa.get(secao) ?? { total: 0, preenchidas: 0 };
+      atual.total += 1;
+      if ((album[fig.id]?.obtidas || 0) > 0) {
+        atual.preenchidas += 1;
+      }
+      mapa.set(secao, atual);
+      return mapa;
+    }, new Map<string, { total: number; preenchidas: number }>()),
+  )
+    .map(([secao, dados]) => ({
+      secao,
+      faltantes: dados.total - dados.preenchidas,
+      percentual: dados.total > 0 ? (dados.preenchidas / dados.total) * 100 : 0,
+    }))
+    .filter((item) => item.faltantes > 0)
+    .sort((a, b) => b.faltantes - a.faltantes)
+    .slice(0, 3);
+
+  void potencialTroca;
+  void secoesComDeficit;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900 text-gray-100 p-4 sm:p-6">
-      <div className="max-w-6xl mx-auto">
-        <header className="mb-6 sm:mb-8 rounded-3xl border border-gray-800 bg-gray-900/70 backdrop-blur px-5 py-6 sm:px-6 sm:py-7 shadow-2xl shadow-black/20 text-center">
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
-            {obterAlbumTitulo()}
-          </h1>
-          <p className="text-gray-400 mt-2 max-w-2xl mx-auto">
-            Estas são as figurinhas disponíveis para troca neste álbum. Quem quiser,
-            pode registrar interesse escolhendo uma figurinha que está faltando para você.
-          </p>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 max-w-2xl mx-auto">
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Figurinhas para trocar
-              </span>
-              <span className="text-xl font-bold text-emerald-400">
-                {disponiveis.length}
-              </span>
-            </div>
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Unidades disponíveis
-              </span>
-              <span className="text-xl font-bold text-cyan-400">
-                {totalDisponiveis}
-              </span>
-            </div>
-            <div className="bg-gray-800/80 p-3 rounded-2xl border border-gray-700 text-center">
-              <span className="text-xs text-gray-400 block uppercase font-bold">
-                Total do álbum
-              </span>
-              <span className="text-xl font-bold text-blue-400">
-                {listaFigurinhas.length}
-              </span>
-            </div>
-          </div>
-        </header>
-
-        <InteresseTrocaForm disponiveis={disponiveis} faltando={faltando} />
-
-        <TrocasFilter
-          disponiveis={disponiveis}
-          totalDisponiveis={totalDisponiveis}
-          listaFigurinhasLength={listaFigurinhas.length}
-        />
-      </div>
-    </div>
+    <TrocasPageClient
+      titulo={obterAlbumTitulo()}
+      disponiveis={disponiveis}
+      faltando={faltando}
+      totalDisponiveis={totalDisponiveis}
+      totalAlbum={listaFigurinhas.length}
+    />
   );
 }

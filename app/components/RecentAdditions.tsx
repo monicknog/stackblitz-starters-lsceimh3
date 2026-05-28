@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import { listaFigurinhas } from '../lib/album';
 
 type ChangeItem = {
@@ -42,9 +43,11 @@ export function RecentAdditions() {
   return (
     <div className="mt-6 bg-gray-800 p-4 rounded-2xl border border-gray-700">
       <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm text-gray-300 font-semibold">Últimas figurinhas adicionadas</h3>
+        <h3 className="text-sm text-gray-300 font-semibold">Ultimas figurinhas adicionadas</h3>
         <div className="flex items-center gap-3">
-          <a href="/historico" className="text-xs text-blue-400 hover:underline">Ver histórico completo</a>
+          <Link href="/historico" className="text-xs text-blue-400 hover:underline">
+            Ver historico completo
+          </Link>
           <button
             type="button"
             onClick={async () => {
@@ -53,7 +56,6 @@ export function RecentAdditions() {
               try {
                 const res = await fetch('/api/album/history/regenerate', { method: 'POST' });
                 if (res.ok) {
-                  // reload list
                   await carregar();
                 }
               } catch {
@@ -64,13 +66,13 @@ export function RecentAdditions() {
             }}
             className="text-xs bg-gray-700 px-2 py-1 rounded text-gray-200 hover:bg-gray-600"
           >
-            {generating ? 'Gerando...' : 'Gerar histórico'}
+            {generating ? 'Gerando...' : 'Gerar historico'}
           </button>
         </div>
       </div>
 
       {items.length === 0 ? (
-        <p className="text-sm text-gray-400">Nenhuma alteração recente registrada.</p>
+        <p className="text-sm text-gray-400">Nenhuma alteracao recente registrada.</p>
       ) : (
         <ul className="relative pl-5 space-y-3 text-sm text-gray-200 before:absolute before:left-2 before:top-1 before:bottom-1 before:w-px before:bg-gray-700">
           {items.map((it) => {
@@ -79,6 +81,7 @@ export function RecentAdditions() {
               ? `${meta.numero} ${meta.jogador ?? meta.pais ?? ''} (${meta.id})`
               : `(${it.figurinhaId})`;
             const sign = it.delta >= 0 ? `+${it.delta}` : `${it.delta}`;
+            const origem = it.source === 'trade_accept' ? 'Troca aceita' : 'Manual';
 
             return (
               <li key={it.id} className="relative rounded-lg border border-gray-700 bg-gray-900/70 p-3">
@@ -90,7 +93,15 @@ export function RecentAdditions() {
                   </span>
                 </div>
                 <div className="mt-2 text-xs text-gray-400 flex items-center justify-between gap-4">
-                  <span>{it.source || 'manual'}</span>
+                  <span
+                    className={`rounded px-2 py-0.5 font-semibold ${
+                      it.source === 'trade_accept'
+                        ? 'bg-violet-600/30 text-violet-300'
+                        : 'bg-gray-700 text-gray-300'
+                    }`}
+                  >
+                    {origem}
+                  </span>
                   <span>{new Date(it.createdAt).toLocaleString()}</span>
                 </div>
               </li>

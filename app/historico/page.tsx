@@ -26,6 +26,7 @@ export default async function HistoricoPage() {
                   ? `${meta.numero} ${meta.jogador ?? meta.pais ?? ''} (${meta.id})`
                   : `(${it.figurinhaId})`;
                 const sign = it.delta >= 0 ? `+${it.delta}` : `${it.delta}`;
+                const origem = it.source === 'trade_accept' ? 'Troca aceita' : 'Manual';
 
                 return (
                   <div key={it.id} className="relative rounded-lg border border-gray-700 bg-gray-900 p-3 text-sm text-gray-200">
@@ -38,7 +39,15 @@ export default async function HistoricoPage() {
                     </div>
 
                     <div className="text-xs text-gray-400 flex items-center justify-between gap-4">
-                      <span>{it.source || 'manual'}</span>
+                      <span
+                        className={`rounded px-2 py-0.5 font-semibold ${
+                          it.source === 'trade_accept'
+                            ? 'bg-violet-600/30 text-violet-300'
+                            : 'bg-gray-700 text-gray-300'
+                        }`}
+                      >
+                        {origem}
+                      </span>
                       <span>{new Date(it.createdAt).toLocaleString()}</span>
                     </div>
                   </div>

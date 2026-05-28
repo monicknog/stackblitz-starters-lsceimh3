@@ -8,7 +8,6 @@ import {
   SENHA_PRINCIPAL,
   type EstadoFigurinhas,
   listaFigurinhas,
-  listarSecoesComBandeiras,
   obterAlbumTitulo,
 } from './lib/album';
 import { RecentAdditions } from './components/RecentAdditions';
@@ -26,6 +25,7 @@ export default function Home() {
   const [senhaDigitada, setSenhaDigitada] = useState('');
   const [mensagemSenha, setMensagemSenha] = useState('');
   const [mensagemLink, setMensagemLink] = useState('');
+  const [showShareMenu, setShowShareMenu] = useState(false);
   const [mensagemBanco, setMensagemBanco] = useState('');
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
   const [showRecent, setShowRecent] = useState(false);
@@ -143,7 +143,10 @@ export default function Home() {
   };
 
   const secoesDisponiveis = useMemo(() => {
-    return [{ value: 'todas', label: 'Todas as Seções' }, ...listarSecoesComBandeiras(listaFigurinhas)];
+    const paises = Array.from(new Set(listaFigurinhas.map((f) => f.pais).filter(Boolean) as string[]))
+      .sort((a, b) => a.localeCompare(b, 'pt-BR'))
+      .map((pais) => ({ value: pais, label: pais }));
+    return [{ value: 'todas', label: 'Todas as seleções' }, ...paises];
   }, []);
 
   const estatisticas = useMemo(() => {
@@ -180,7 +183,7 @@ export default function Home() {
         if (!bateComBusca) return false;
       }
 
-      if (filtroSecao !== 'todas' && f.secao !== filtroSecao) return false;
+      if (filtroSecao !== 'todas' && f.pais !== filtroSecao) return false;
 
       if (filtroStatus === 'preenchidas' && qtd === 0) return false;
       if (filtroStatus === 'faltantes' && qtd > 0) return false;
@@ -194,7 +197,7 @@ export default function Home() {
     const grupos = new Map<string, typeof listaFigurinhas>();
 
     figurinhasFiltradas.forEach((fig) => {
-      const chave = fig.secao || 'Sem seção';
+      const chave = fig.pais || fig.sigla || 'Sem seleção';
       const itens = grupos.get(chave);
 
       if (itens) {
@@ -298,6 +301,36 @@ export default function Home() {
     }
   };
 
+  const enviarLink = async (
+    caminho: '/compartilhar' | '/trocas' | '/interessados',
+    titulo: string,
+    texto: string,
+    mensagemSucesso: string,
+    mensagemFalha: string,
+  ) => {
+    try {
+      await fetch('/api/album', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ album }),
+      });
+
+      const url = await montarUrlCompartilhada(caminho);
+
+      if (typeof navigator !== 'undefined' && 'share' in navigator) {
+        await navigator.share({ title: titulo, text: texto, url });
+        setMensagemLink(mensagemSucesso);
+      } else {
+        await navigator.clipboard.writeText(url);
+        setMensagemLink(`${mensagemSucesso} (copiado)`);
+      }
+
+      window.setTimeout(() => setMensagemLink(''), 2500);
+    } catch {
+      setMensagemLink(mensagemFalha);
+    }
+  };
+
   if (!autenticado) {
     return (
       <div className="min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center p-6">
@@ -350,7 +383,55 @@ export default function Home() {
             <p className="text-gray-400 mt-1">
               Gerenciador pessoal de figurinhas
             </p>
-            <div className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+            <div className="mt-4 space-y-3">
+              <nav className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                <Link href="/" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Album</Link>
+                <Link href="/trocas" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Trocas</Link>
+                <Link href="/interessados" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Interessados</Link>
+                <Link href="/compartilhar" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Publico</Link>
+                <Link href="/historico" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Historico</Link>
+                <Link href="/avaliar-troca" className="px-3 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-sm text-white font-medium transition-colors">Avaliar troca</Link>
+              </nav>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setShowShareMenu((v) => !v)}
+                    className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors"
+                  >
+                    Compartilhar
+                  </button>
+                  {showShareMenu ? (
+                    <div className="absolute z-20 mt-2 w-64 rounded-lg border border-gray-700 bg-gray-900 shadow-2xl p-2">
+                      <button type="button" onClick={copiarLinkPublico} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Copiar link publico</button>
+                      <button type="button" onClick={() => enviarLink('/compartilhar', 'Album', 'Veja meu album de figurinhas', 'Link publico enviado.', 'Nao foi possivel enviar o link.')} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Enviar link publico</button>
+                      <button type="button" onClick={copiarLinkTroca} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Copiar link de troca</button>
+                      <button type="button" onClick={() => enviarLink('/trocas', 'Trocas', 'Veja minhas figurinhas para troca', 'Link de troca enviado.', 'Nao foi possivel enviar o link de troca.')} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Enviar link de troca</button>
+                      <button type="button" onClick={copiarLinkInteressados} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Copiar link interessados</button>
+                      <button type="button" onClick={() => enviarLink('/interessados', 'Interessados', 'Acompanhe os interessados em troca', 'Link de interessados enviado.', 'Nao foi possivel enviar o link de interessados.')} className="w-full text-left px-3 py-2 rounded hover:bg-gray-800 text-sm text-gray-200">Enviar link interessados</button>
+                    </div>
+                  ) : null}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setShowRecent((s) => !s)}
+                  className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors"
+                >
+                  {showRecent ? 'Ocultar ultimas adicoes' : 'Mostrar ultimas adicoes'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    localStorage.removeItem('album_copa_2026_autenticado');
+                    setAutenticado(false);
+                  }}
+                  className="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold transition-colors"
+                >
+                  Bloquear novamente
+                </button>
+              </div>
+            </div>
+            <div className="hidden mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
               <button
                 type="button"
                 onClick={copiarLinkPublico}
@@ -502,7 +583,7 @@ export default function Home() {
 
           <div>
             <label className="block text-xs font-bold text-gray-400 uppercase mb-2">
-              Seção do Álbum:
+              Seleção / País:
             </label>
             <select
               className="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-red-500 capitalize"
@@ -574,7 +655,7 @@ export default function Home() {
 
                     {aberta ? (
                       <div className="border-t border-gray-700 p-4">
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
                           {itens.map((fig) => (
                             <FigurinhaCard
                               key={fig.id}

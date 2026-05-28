@@ -10,6 +10,7 @@
     "build:jogadores": "node scripts/scrape-scanini-slugs.mjs && node scripts/build-figurinhas-jogadores.mjs"
   },
   "dependencies": {
+    "@google/genai": "^2.7.0",
     "@google/generative-ai": "^0.24.1",
     "@libsql/client": "^0.17.3",
     "@types/node": "20.6.2",
