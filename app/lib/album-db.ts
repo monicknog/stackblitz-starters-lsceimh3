@@ -733,12 +733,12 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
       args: [ALBUM_ID, JSON.stringify(album), now],
     });
 
-    // record changes (figurinhas whose count increased)
+    // record any changes so additions and removals appear in the history
     const changes = [] as Array<{ id: string; delta: number }>;
     for (const key of Object.keys(album)) {
       const novo = Number((album as any)[key]?.obtidas || album[key] || 0) || 0;
       const velho = Number((antigo as any)[key]?.obtidas || antigo[key] || 0) || 0;
-      if (novo > velho) {
+      if (novo !== velho) {
         changes.push({ id: key, delta: novo - velho });
       }
     }
@@ -791,7 +791,7 @@ export async function salvarAlbumNoBanco(album: EstadoFigurinhas) {
     for (const key of Object.keys(album)) {
       const novo = Number((album as any)[key]?.obtidas || album[key] || 0) || 0;
       const velho = Number((antigo as any)[key]?.obtidas || antigo[key] || 0) || 0;
-      if (novo > velho) {
+      if (novo !== velho) {
         changes.push({ id: key, delta: novo - velho });
       }
     }

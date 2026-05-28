@@ -1,6 +1,9 @@
 import { listaFigurinhas } from '../lib/album';
 import { listarHistoricoAlteracoes } from '../lib/album-db';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default async function HistoricoPage() {
   const items = await listarHistoricoAlteracoes(20);
 
