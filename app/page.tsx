@@ -26,9 +26,11 @@ export default function Home() {
   const [mensagemSenha, setMensagemSenha] = useState('');
   const [mensagemLink, setMensagemLink] = useState('');
   const [showShareMenu, setShowShareMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [mensagemBanco, setMensagemBanco] = useState('');
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
   const [showRecent, setShowRecent] = useState(false);
+  const [showRankingModal, setShowRankingModal] = useState(false);
   const [secaoAberta, setSecaoAberta] = useState<Record<string, boolean>>({});
   const lastSavedAtRef = useRef<string | null>(null);
 
@@ -165,6 +167,28 @@ export default function Home() {
     });
 
     return { total, preenchidas, faltantes: total - preenchidas, repetidas, cartasRepetidas };
+  }, [album]);
+
+  const rankingSelecoes = useMemo(() => {
+    const mapa = new Map<string, { total: number; preenchidas: number }>();
+
+    listaFigurinhas.forEach((f) => {
+      if (!f.pais) return;
+      const atual = mapa.get(f.pais) ?? { total: 0, preenchidas: 0 };
+      atual.total += 1;
+      if ((album[f.id]?.obtidas || 0) > 0) {
+        atual.preenchidas += 1;
+      }
+      mapa.set(f.pais, atual);
+    });
+
+    return Array.from(mapa.entries())
+      .map(([pais, dados]) => {
+        const faltam = dados.total - dados.preenchidas;
+        const percentual = dados.total > 0 ? (dados.preenchidas / dados.total) * 100 : 0;
+        return { pais, total: dados.total, preenchidas: dados.preenchidas, faltam, percentual };
+      })
+      .sort((a, b) => a.faltam - b.faltam || b.percentual - a.percentual || a.pais.localeCompare(b.pais, 'pt-BR'));
   }, [album]);
 
   const figurinhasFiltradas = useMemo(() => {
@@ -384,7 +408,16 @@ export default function Home() {
               Gerenciador pessoal de figurinhas
             </p>
             <div className="mt-4 space-y-3">
-              <nav className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="lg:hidden flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setShowMobileMenu((v) => !v)}
+                  className="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-semibold transition-colors"
+                >
+                  Menu
+                </button>
+              </div>
+              <nav className={`${showMobileMenu ? 'flex' : 'hidden'} lg:flex flex-wrap gap-2 justify-center lg:justify-start`}>
                 <Link href="/" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Album</Link>
                 <Link href="/trocas" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Trocas</Link>
                 <Link href="/interessados" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Interessados</Link>
@@ -392,7 +425,7 @@ export default function Home() {
                 <Link href="/historico" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Historico</Link>
                 <Link href="/avaliar-troca" className="px-3 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-sm text-white font-medium transition-colors">Avaliar troca</Link>
               </nav>
-              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <div className={`${showMobileMenu ? 'flex' : 'hidden'} lg:flex flex-wrap gap-3 justify-center lg:justify-start`}>
                 <div className="relative">
                   <button
                     type="button"
@@ -418,6 +451,13 @@ export default function Home() {
                   className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors"
                 >
                   {showRecent ? 'Ocultar ultimas adicoes' : 'Mostrar ultimas adicoes'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowRankingModal(true)}
+                  className="px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-sm text-white font-medium transition-colors"
+                >
+                  Ranking selecoes
                 </button>
                 <button
                   type="button"
@@ -655,7 +695,7 @@ export default function Home() {
 
                     {aberta ? (
                       <div className="border-t border-gray-700 p-4">
-                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-3 sm:gap-4">
                           {itens.map((fig) => (
                             <FigurinhaCard
                               key={fig.id}
@@ -675,6 +715,43 @@ export default function Home() {
           )}
         </main>
       </div>
+
+      {showRankingModal ? (
+        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl rounded-2xl border border-gray-700 bg-gray-900 shadow-2xl">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+              <h2 className="text-sm sm:text-base font-semibold text-white">Ranking de selecoes mais proximas</h2>
+              <button
+                type="button"
+                onClick={() => setShowRankingModal(false)}
+                className="px-2 py-1 rounded bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs"
+              >
+                Fechar
+              </button>
+            </div>
+            <div className="max-h-[70vh] overflow-y-auto p-3 sm:p-4">
+              <div className="space-y-2">
+                {rankingSelecoes.map((item, idx) => (
+                  <div key={item.pais} className="rounded-lg border border-gray-800 bg-gray-950/50 px-3 py-2 flex items-center justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="text-sm text-white font-medium truncate">
+                        {idx + 1}. {item.pais}
+                      </p>
+                      <p className="text-xs text-gray-400">
+                        {item.preenchidas}/{item.total} preenchidas
+                      </p>
+                    </div>
+                    <div className="text-right shrink-0">
+                      <p className="text-sm font-semibold text-amber-400">Faltam {item.faltam}</p>
+                      <p className="text-xs text-gray-400">{item.percentual.toFixed(0)}%</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
