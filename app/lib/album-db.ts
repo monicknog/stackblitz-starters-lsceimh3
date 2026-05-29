@@ -1008,3 +1008,133 @@ export async function gerarHistoricoAPartirDoAlbum() {
     database.close();
   }
 }
+
+export async function aplicarTrocaNoAlbum(
+  recebidas: string[],
+  entregues: string[],
+) {
+  const cliente = criarClienteTurso();
+  const agora = new Date().toISOString();
+
+  if (cliente) {
+    await garantirSchemaTurso();
+    const transacao = await cliente.transaction('write');
+    try {
+      const resultado = await transacao.execute({
+        sql: 'SELECT album_json FROM album_state WHERE id = ? LIMIT 1',
+        args: [ALBUM_ID],
+      } as any);
+
+      const linha = resultado.rows[0] as unknown as AlbumRow | undefined;
+      const albumJson = String(linha?.album_json ?? '').trim();
+      const album = albumJson ? (JSON.parse(albumJson) as EstadoFigurinhas) : ({} as EstadoFigurinhas);
+
+      for (const id of recebidas) {
+        const qtd = album[id]?.obtidas || 0;
+        album[id] = { obtidas: qtd + 1 };
+      }
+
+      for (const id of entregues) {
+        const qtd = album[id]?.obtidas || 0;
+        album[id] = { obtidas: Math.max(0, qtd - 1) };
+      }
+
+      await transacao.execute({
+        sql: `
+          INSERT INTO album_state (id, album_json, updated_at)
+          VALUES (?, ?, ?)
+          ON CONFLICT(id) DO UPDATE SET
+            album_json = excluded.album_json,
+            updated_at = excluded.updated_at
+        `,
+        args: [ALBUM_ID, JSON.stringify(album), agora],
+      } as any);
+
+      for (const id of recebidas) {
+        await inserirHistoricoTurso(transacao, {
+          id: randomUUID(),
+          figurinhaId: id,
+          delta: 1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+      }
+
+      for (const id of entregues) {
+        await inserirHistoricoTurso(transacao, {
+          id: randomUUID(),
+          figurinhaId: id,
+          delta: -1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+      }
+
+      await transacao.commit();
+      return agora;
+    } catch (erro) {
+      await transacao.rollback();
+      throw erro;
+    } finally {
+      transacao.close();
+    }
+  }
+
+  const database = abrirBanco();
+  try {
+    garantirSchemaLocal(database);
+    const operacao = database.transaction((idsRecebidas: string[], idsEntregues: string[]) => {
+      const linha = database
+        .prepare('SELECT album_json FROM album_state WHERE id = ? LIMIT 1')
+        .get(ALBUM_ID) as { album_json?: string } | undefined;
+
+      const albumJson = String(linha?.album_json ?? '').trim();
+      const album = albumJson ? (JSON.parse(albumJson) as EstadoFigurinhas) : ({} as EstadoFigurinhas);
+
+      for (const id of idsRecebidas) {
+        const qtd = album[id]?.obtidas || 0;
+        album[id] = { obtidas: qtd + 1 };
+      }
+
+      for (const id of idsEntregues) {
+        const qtd = album[id]?.obtidas || 0;
+        album[id] = { obtidas: Math.max(0, qtd - 1) };
+      }
+
+      database
+        .prepare(`
+          INSERT INTO album_state (id, album_json, updated_at)
+          VALUES (?, ?, ?)
+          ON CONFLICT(id) DO UPDATE SET
+            album_json = excluded.album_json,
+            updated_at = excluded.updated_at
+        `)
+        .run(ALBUM_ID, JSON.stringify(album), agora);
+
+      for (const id of idsRecebidas) {
+        inserirHistoricoLocal(database, {
+          id: randomUUID(),
+          figurinhaId: id,
+          delta: 1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+      }
+
+      for (const id of idsEntregues) {
+        inserirHistoricoLocal(database, {
+          id: randomUUID(),
+          figurinhaId: id,
+          delta: -1,
+          source: 'trade_accept',
+          createdAt: agora,
+        });
+      }
+    });
+
+    operacao(recebidas, entregues);
+    return agora;
+  } finally {
+    database.close();
+  }
+}

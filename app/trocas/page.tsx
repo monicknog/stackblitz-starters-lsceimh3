@@ -9,6 +9,9 @@ import {
 import { carregarAlbumDoBanco, listarInteressesDeTroca } from '../lib/album-db';
 import { TrocasPageClient } from './TrocasPageClient';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 interface PageProps {
   searchParams?: {
     s?: string;

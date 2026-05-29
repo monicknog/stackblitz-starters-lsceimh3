@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, type FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { InteresseTrocaForm } from './InteresseTrocaForm';
+import { RegistrarTrocaAssistida } from './RegistrarTrocaAssistida';
 import { TrocasFilter } from './TrocasFilter';
 import { SENHA_PRINCIPAL, type FigurinhaComTroca } from '../lib/album';
 import type { Figurinha } from '../components/FigurinhaCard';
@@ -73,6 +74,7 @@ export function TrocasPageClient({ titulo, disponiveis, faltando, totalDisponive
           </div>
         </header>
 
+        <RegistrarTrocaAssistida disponiveis={disponiveis} faltando={faltando} />
         <InteresseTrocaForm disponiveis={disponiveis} faltando={faltando} />
         <TrocasFilter disponiveis={disponiveis} totalDisponiveis={totalDisponiveis} listaFigurinhasLength={totalAlbum} />
       </div>
