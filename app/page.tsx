@@ -425,6 +425,8 @@ export default function Home() {
                 <Link href="/interessados" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Interessados</Link>
                 <Link href="/compartilhar" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Publico</Link>
                 <Link href="/historico" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Historico</Link>
+                <Link href="/faltantes-resumo" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Resumo faltantes</Link>
+                <Link href="/disponiveis-resumo" className="px-3 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm text-gray-200 font-medium transition-colors">Resumo trocas</Link>
                 <Link href="/avaliar-troca" className="px-3 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-sm text-white font-medium transition-colors">Avaliar troca</Link>
               </nav>
               <div className={`${showMobileMenu ? 'flex' : 'hidden'} lg:flex flex-wrap gap-3 justify-center lg:justify-start`}>
